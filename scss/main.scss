@@ -1,0 +1,180 @@
+@use "partials/biblioteca" as bc;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+// FONTE ::: font-family: 'Merriweather Sans', sans-serif;
+ // light -- dark
+
+html[tema="light"]{   
+   // @include bc.templete();
+}   
+
+html[tema="dark"]{
+    //@include bc.templete();
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.sm{
+    display: none;
+}
+
+header.lg-xl{
+    nav{
+        background-color: #CFD984;
+        display: grid;
+        width: 100%;
+        height: 5vh;
+        grid-template-columns: repeat(5, 1fr);
+        font-weight: bold;
+        grid-template-areas:  
+        'logo link link link tema'
+        ;
+
+        > a{
+            text-decoration: none;
+            align-self: center;
+            grid-area: logo;
+            margin: 1vh;
+        }
+
+        .toggle{
+            grid-area: tema;
+            justify-self: end;
+        }
+
+        ul{
+            grid-area: link;
+            justify-self: center;
+            align-self: center;
+            display: inline-block;
+            list-style: none;
+            li{
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                    padding: 2vh;
+                    
+                    &:visited{
+                        color: black;
+                    }
+
+                    &:hover{
+                        color: #3C2440;
+                        transition: 400ms;
+                        font-size: 2em;
+                    }
+
+                    &:link {
+                        color: #FF0000;
+                    }
+                    
+                    &:active{
+                        transition: 0ms;
+                        color: #FF0000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 1100 primeira troca screen
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  }
+  
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 760px) {
+    body {
+        background-color: olive;
+    }
+    .sm{
+        display:inline;
+
+        nav{
+            background-color: #CFD984;
+            display: grid;
+            width: 100%;
+            min-height: 5vh;
+            grid-template-columns: repeat(3, 1fr);
+            font-weight: bold;
+            grid-template-areas:  
+            'logo tema link'
+            ;
+    
+            > a{
+                text-decoration: none;
+                align-self: center;
+                grid-area: logo;
+                margin: 1vh;
+            }
+            
+            .toggle{
+                grid-area: tema;
+                justify-self: center;
+                align-self: center;
+            }
+            
+            #select{
+                grid-area: link;
+                justify-self: end;
+                align-self: center;
+                margin-right: 1vh;
+            }
+        }
+    }
+
+    .lg-xl{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    body{
+        background-color: teal;
+    }
+}
+
+
+/*  TEMAS
+
+@mixin bloco {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    margin: 5px;
+    display: inline-block;
+}
+
+.bloco1,.bloco2,.bloco3,.bloco4,.bloco5{
+    @include bloco()
+}
+
+.bloco1{background-color:#3C2440 ;}
+.bloco2{background-color:#557340 ;}
+.bloco3{background-color:#A9BF5A ;}
+.bloco4{background-color:#CFD984 ;}
+.bloco5{background-color:#F2E0BD ;}
+
+
+
+main - #3C2440 --- #557340 --- #A9BF5A --- #CFD984 --- #F2E0BD
+elegante - #0B0B0D --- #202626 --- #383F40 --- #D9B282 --- #8C5B3F
+blue - #002D5C --- #025797 --- #0968AD --- #248BDA --- #59A0D4
+festa - #62CDD9 --- #0AA605 --- #F2B705 --- #F25C05 --- #F21616
+preto_branco - #F2F2F2 --- #BFBFBF --- #737373 --- #404040--- #0D0D0D
+rosa - #590219 --- #8C0F3D --- #A6175A --- #D93280 --- #F241A3
+*/
