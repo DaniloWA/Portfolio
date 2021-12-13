@@ -3,6 +3,7 @@
 // FONTE ::: font-family: 'Merriweather Sans', sans-serif;
  // light -- dark
 
+ /*
 html[tema="light"]{   
    // @include bc.templete();
 }   
@@ -10,11 +11,16 @@ html[tema="light"]{
 html[tema="dark"]{
     //@include bc.templete();
 }
+*/
 
 *{
     padding: 0;
     margin: 0;
     font-family: 'Merriweather Sans', sans-serif;
+}
+
+body {
+    background-color: #3C2440;
 }
 
 .sm{
@@ -25,24 +31,47 @@ header.lg-xl{
     nav{
         background-color: #CFD984;
         display: grid;
-        width: 100%;
-        height: 5vh;
-        grid-template-columns: repeat(5, 1fr);
+        min-width: 100%;
+        min-height: 5vh;
+        max-height: 5vh;
+        grid-template-columns: 0.3fr repeat(5, 2fr) 0.3fr;
         font-weight: bold;
         grid-template-areas:  
-        'logo link link link tema'
+        'logo txtLogo link link link txtTema tema'
         ;
+
+        .txtLogo{
+            justify-self: start;
+            align-self: center;
+            grid-area: txtLogo;
+        }
+        .txtTema{
+            justify-self: end;
+            align-self: center;
+            grid-area: txtTema;
+        }
 
         > a{
             text-decoration: none;
             align-self: center;
             grid-area: logo;
-            margin: 1vh;
         }
-
+        .imgLogo{
+            min-height: 1vh; 
+            max-height: 4vh; 
+        }
+        .imgTema{
+            min-height: 1vh; 
+            max-height: 4vh; 
+        }
+        .logo{
+            justify-self: center;
+            align-self: center;
+        }
         .toggle{
             grid-area: tema;
-            justify-self: end;
+            justify-self: center;
+            align-self: center;
         }
 
         ul{
@@ -81,6 +110,36 @@ header.lg-xl{
     }
 }
 
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr repeat(5,1fr) 2fr;
+    grid-template-areas: 
+    'slide slide slide slide slide slide slide'
+    '. conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 .'
+    ;
+}
+
+.slide{
+    grid-area: slide;
+    min-height:60vh;
+    background-image: url("/midia/img/projeto-bloco-notas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    border-bottom: 5px solid black;
+}
+.conteudo{
+    grid-area: conteudo2;
+    background-color: #F2E0BD;
+    border-left:5px solid black ;
+    border-right:5px solid black ;
+    padding: 15px;
+    padding-top: 30px;
+    box-shadow: inset 0 10px 15px black ;
+    width: 100%;
+    height: 800px;
+}
 // 1100 primeira troca screen
 
 
@@ -97,40 +156,74 @@ header.lg-xl{
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 760px) {
     body {
-        background-color: olive;
+        background-color: #F2E0BD;
     }
     .sm{
         display:inline;
 
         nav{
-            background-color: #CFD984;
+            background-color: #557340;
             display: grid;
-            width: 100%;
+            min-width: 100%;
             min-height: 5vh;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 0.3fr repeat(5, 2fr) 0.3fr;
             font-weight: bold;
             grid-template-areas:  
-            'logo tema link'
+            'logo txtLogo txtLogo select txtTema txtTema  tema'
             ;
+    
+            .txtLogo{
+                justify-self: start;
+                align-self: center;
+                grid-area: txtLogo;
+            }
+            .txtTema{
+                justify-self: end;
+                align-self: center;
+                grid-area: txtTema;
+            }
     
             > a{
                 text-decoration: none;
                 align-self: center;
                 grid-area: logo;
-                margin: 1vh;
             }
-            
+            .imgLogo{
+                min-height: 1vh; 
+                max-height: 4vh; 
+            }
+            .imgTema{
+                min-height: 1vh; 
+                max-height: 4vh; 
+            }
+            .logo{
+                justify-self: center;
+                align-self: center;
+            }
             .toggle{
                 grid-area: tema;
                 justify-self: center;
                 align-self: center;
             }
-            
-            #select{
-                grid-area: link;
-                justify-self: end;
+    
+            #menu{
+                justify-self: center;
                 align-self: center;
-                margin-right: 1vh;
+                grid-area: select;
+
+                border-radius: 10px;
+                background: transparent;
+                border: none;
+                text-align: center;
+                &:hover{
+                    background-color: #F2E0BD; 
+                }
+                option{  
+                    background-color: #F2E0BD;
+                    &:hover{
+                        background-color: #F2E0BD; 
+                    }
+                }
             }
         }
     }

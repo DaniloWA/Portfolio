@@ -1,8 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap");
+/*
+html[tema="light"]{   
+   // @include bc.templete();
+}   
+
+html[tema="dark"]{
+    //@include bc.templete();
+}
+*/
 * {
   padding: 0;
   margin: 0;
   font-family: "Merriweather Sans", sans-serif;
+}
+
+body {
+  background-color: #3C2440;
 }
 
 .sm {
@@ -12,21 +25,44 @@
 header.lg-xl nav {
   background-color: #CFD984;
   display: grid;
-  width: 100%;
-  height: 5vh;
-  grid-template-columns: repeat(5, 1fr);
+  min-width: 100%;
+  min-height: 5vh;
+  max-height: 5vh;
+  grid-template-columns: 0.3fr repeat(5, 2fr) 0.3fr;
   font-weight: bold;
-  grid-template-areas: "logo link link link tema";
+  grid-template-areas: "logo txtLogo link link link txtTema tema";
+}
+header.lg-xl nav .txtLogo {
+  justify-self: start;
+  align-self: center;
+  grid-area: txtLogo;
+}
+header.lg-xl nav .txtTema {
+  justify-self: end;
+  align-self: center;
+  grid-area: txtTema;
 }
 header.lg-xl nav > a {
   text-decoration: none;
   align-self: center;
   grid-area: logo;
-  margin: 1vh;
+}
+header.lg-xl nav .imgLogo {
+  min-height: 1vh;
+  max-height: 4vh;
+}
+header.lg-xl nav .imgTema {
+  min-height: 1vh;
+  max-height: 4vh;
+}
+header.lg-xl nav .logo {
+  justify-self: center;
+  align-self: center;
 }
 header.lg-xl nav .toggle {
   grid-area: tema;
-  justify-self: end;
+  justify-self: center;
+  align-self: center;
 }
 header.lg-xl nav ul {
   grid-area: link;
@@ -58,6 +94,34 @@ header.lg-xl nav ul li a:active {
   color: #FF0000;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 2fr repeat(5, 1fr) 2fr;
+  grid-template-areas: "slide slide slide slide slide slide slide" ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 .";
+}
+
+.slide {
+  grid-area: slide;
+  min-height: 60vh;
+  background-image: url("/midia/img/projeto-bloco-notas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-bottom: 5px solid black;
+}
+
+.conteudo {
+  grid-area: conteudo2;
+  background-color: #F2E0BD;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  padding: 15px;
+  padding-top: 30px;
+  box-shadow: inset 0 10px 15px black;
+  width: 100%;
+  height: 800px;
+}
+
 @media screen and (max-width: 992px) {
   body {
     background-color: blue;
@@ -66,37 +130,70 @@ header.lg-xl nav ul li a:active {
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 760px) {
   body {
-    background-color: olive;
+    background-color: #F2E0BD;
   }
 
   .sm {
     display: inline;
   }
   .sm nav {
-    background-color: #CFD984;
+    background-color: #557340;
     display: grid;
-    width: 100%;
+    min-width: 100%;
     min-height: 5vh;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 0.3fr repeat(5, 2fr) 0.3fr;
     font-weight: bold;
-    grid-template-areas: "logo tema link";
+    grid-template-areas: "logo txtLogo txtLogo select txtTema txtTema  tema";
+  }
+  .sm nav .txtLogo {
+    justify-self: start;
+    align-self: center;
+    grid-area: txtLogo;
+  }
+  .sm nav .txtTema {
+    justify-self: end;
+    align-self: center;
+    grid-area: txtTema;
   }
   .sm nav > a {
     text-decoration: none;
     align-self: center;
     grid-area: logo;
-    margin: 1vh;
+  }
+  .sm nav .imgLogo {
+    min-height: 1vh;
+    max-height: 4vh;
+  }
+  .sm nav .imgTema {
+    min-height: 1vh;
+    max-height: 4vh;
+  }
+  .sm nav .logo {
+    justify-self: center;
+    align-self: center;
   }
   .sm nav .toggle {
     grid-area: tema;
     justify-self: center;
     align-self: center;
   }
-  .sm nav #select {
-    grid-area: link;
-    justify-self: end;
+  .sm nav #menu {
+    justify-self: center;
     align-self: center;
-    margin-right: 1vh;
+    grid-area: select;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    text-align: center;
+  }
+  .sm nav #menu:hover {
+    background-color: #F2E0BD;
+  }
+  .sm nav #menu option {
+    background-color: #F2E0BD;
+  }
+  .sm nav #menu option:hover {
+    background-color: #F2E0BD;
   }
 
   .lg-xl {
