@@ -1,0 +1,476 @@
+
+@mixin bloco {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+}
+
+@mixin fotos{
+    min-height:60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: none;
+}
+
+@mixin textos{
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: rgba(0, 0, 0, 0.377);
+    min-width: 700px;
+    max-width: 700px;
+    max-height: 200px;
+    font-weight: bold;
+    text-align: center;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.726);
+        border: 2px solid rgba(0, 0, 0, 0.486);
+        color: rgba(255, 255, 255, 0.575);
+        input{
+            color: blue;
+        }
+    }
+    input{
+        border-radius: 15px;
+        width: 10vh;
+        margin-top: 2px;
+        padding: 2px;
+        border: none;
+        background-color: transparent;
+        color: rgba(0, 0, 255, 0.329);
+        font-weight: bold;
+        font-size: 1.2em;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.733);
+        }
+        &:active{
+            background-color: black;
+            color: green;
+        }
+    }
+}
+
+@mixin slide($foto){
+    .slide{
+        grid-area: slide;
+        border-bottom: 1px solid black;
+        .foto01{
+            @include fotos;
+            background-image: url("/midia/img/projeto-bloco-notas.png");
+            .textoFoto1{
+                @include textos;
+                display: none;
+            }
+        }
+        .foto02{
+            @include fotos;
+            background-image: url("/midia/img/terminalProjeto.png");
+            .textoFoto2{
+                @include textos;
+                display: none;
+            }
+        }
+        .foto03{
+            @include fotos;
+            background-image: url("/midia/img/keyCodeProjeto.png");
+            .textoFoto3{
+                @include textos;
+                display: none;
+            }
+        }
+
+        @if $foto == "foto1"{
+            .foto01{
+                display: grid;
+                grid-template-columns:1fr;
+                grid-template-rows:1fr;
+                grid-template-areas: 
+                'foto1'
+                ;
+                .textoFoto1{
+                    grid-area: foto1;
+                    display: block;
+                    justify-self:center;
+                    align-self: end;
+                }
+            }
+        }
+        @if $foto == "foto2"{
+            .foto02{
+                display: grid;
+                grid-template-columns:1fr;
+                grid-template-rows:1fr;
+                grid-template-areas: 
+                'foto2'
+                ;
+                .textoFoto2{
+                    grid-area: foto2;
+                    display: block;
+                    justify-self:center;
+                    align-self: end;
+                }
+            }
+        }
+        @if $foto == "foto3"{
+            .foto03{
+                display: grid;
+                grid-template-columns:1fr;
+                grid-template-rows:1fr;
+                grid-template-areas: 
+                'foto3'
+                ;
+                .textoFoto3{
+                    grid-area: foto3;
+                    display: block;
+                    justify-self:center;
+                    align-self: end;
+                }
+            }
+        }
+    }
+   
+}
+
+@mixin container($foto){
+
+    @include slide($foto);
+
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+    
+    body {
+        background: -300px 0 url(/midia/img/fundo/147309.svg);
+        background-color: #202626;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr repeat(5,1fr) 1fr;
+        grid-template-areas: 
+        'slide slide slide slide slide slide slide'
+        '. conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 .'
+        ;
+    }
+    
+   
+   
+    .conteudo{
+        grid-area: conteudo2;
+        display: grid;
+        text-align: center;
+        background-color: rgb(177, 177, 177);
+        border-left:2px solid black ;
+        border-right:2px solid black ;
+        padding: 15px;
+        padding-top: 30px;
+        box-shadow: 0 10px 15px black ;
+        max-width: 100%;
+        min-height:30vh;
+        grid-template-columns:repeat(6,1fr);
+        column-gap: 1.5vh;
+        row-gap: 2.5vh;
+        grid-template-areas: 
+        'bloco01 bloco02 bloco03 bloco04 bloco05 bloco06'
+        ;
+    }
+    
+    .bloco01{
+        @include bloco();
+        grid-area:bloco01 ;
+    }
+    .bloco02{
+        @include bloco();
+        grid-area:bloco02 ;
+    }
+    .bloco03{
+        @include bloco();
+        grid-area:bloco03 ;
+    }
+    .bloco04{
+        @include bloco();
+        grid-area:bloco04 ;
+    }
+    .bloco05{
+        @include bloco();
+        grid-area:bloco05 ;
+    }
+    .bloco06{
+        @include bloco();
+        grid-area:bloco06 ;
+    }
+    
+}
+
+@mixin navBar{
+    .sm{
+        display: none;
+    }
+    
+    header.lg-xl{
+        nav{
+            background-color: #ffffff;
+            display: grid;
+            min-width: 100%;
+            min-height: 5vh;
+            max-height: 5vh;
+            grid-template-columns: 0.3fr repeat(5, 2fr) 0.3fr;
+            font-weight: bold;
+            grid-template-areas:  
+            'logo txtLogo link link link txtTema tema'
+            ;
+    
+            .txtLogo{
+                justify-self: start;
+                align-self: center;
+                grid-area: txtLogo;
+            }
+            .txtTema{
+                justify-self: end;
+                align-self: center;
+                grid-area: txtTema;
+            }
+    
+            > a{
+                text-decoration: none;
+                align-self: center;
+                grid-area: logo;
+            }
+            .imgLogo{
+                min-height: 1vh; 
+                max-height: 4vh; 
+            }
+            .imgTema{
+                min-height: 1vh; 
+                max-height: 4vh; 
+            }
+            .logo{
+                justify-self: center;
+                align-self: center;
+            }
+            .toggle{
+                grid-area: tema;
+                justify-self: center;
+                align-self: center;
+            }
+    
+            ul{
+                grid-area: link;
+                justify-self: center;
+                align-self: center;
+                display: inline-block;
+                list-style: none;
+                li{
+                    display: inline-block;
+                    a{
+                        text-decoration: none;
+                        padding: 2vh;
+                        
+                        &:visited{
+                            color: black;
+                        }
+    
+                        &:hover{
+                            color: #3C2440;
+                            transition: 300ms;
+                            border:2px solid black;
+                            background-color: black;
+                            color: white;
+                            box-shadow: 0 0 10px black;
+                        }     
+                        &:active{
+                            transition: 0ms;
+                            font-size:0px;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@mixin screen01 {
+    @media screen and (max-width: 1200px) {
+        .container{
+            display: grid;
+            grid-template-columns: 0.5fr repeat(5,1fr) 0.5fr;
+            grid-template-areas: 
+            'slide slide slide slide slide slide slide'
+            '. conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 .'
+            ;
+        }
+        
+       
+       
+        .conteudo{
+            grid-area: conteudo2;
+            display: grid;
+            text-align: center;
+            background-color: rgb(177, 177, 177);
+            border-left:2px solid black ;
+            border-right:2px solid black ;
+            padding: 15px;
+            padding-top: 30px;
+            box-shadow: 0 10px 15px black ;
+            max-width: 100%;
+            min-height:30vh;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: 1fr 1fr;
+            column-gap: 1.5vh;
+            row-gap: 2.5vh;
+            grid-template-areas: 
+            'bloco01 bloco02 bloco03'
+            'bloco04 bloco05 bloco06'
+            ;
+        }
+
+        header.lg-xl{
+            nav{
+                max-height: 10vh;
+            }
+        }
+      }
+}
+
+@mixin screen02 {
+    @media screen and (max-width: 760px) {
+        .conteudo{
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            'bloco01 bloco02'
+            'bloco03 bloco04'
+            'bloco05 bloco06'
+            ;
+        }
+        .sm{
+            display:inline;
+    
+            nav{
+                background-color: #ffffff;
+                display: grid;
+                min-width: 100%;
+                min-height: 5vh;
+                grid-template-columns: 0.3fr repeat(5, 2fr) 0.3fr;
+                font-weight: bold;
+                grid-template-areas:  
+                'logo txtLogo txtLogo select txtTema txtTema  tema'
+                ;
+        
+                .txtLogo{
+                    justify-self: start;
+                    align-self: center;
+                    grid-area: txtLogo;
+                }
+                .txtTema{
+                    justify-self: end;
+                    align-self: center;
+                    grid-area: txtTema;
+                }
+        
+                > a{
+                    text-decoration: none;
+                    align-self: center;
+                    grid-area: logo;
+                }
+                .imgLogo{
+                    min-height: 1vh; 
+                    max-height: 4vh; 
+                }
+                .imgTema{
+                    min-height: 1vh; 
+                    max-height: 4vh; 
+                }
+                .logo{
+                    justify-self: center;
+                    align-self: center;
+                }
+                .toggle{
+                    grid-area: tema;
+                    justify-self: center;
+                    align-self: center;
+                }
+        
+                #menu{
+                    justify-self: center;
+                    align-self: center;
+                    grid-area: select;
+    
+                    border-radius: 10px;
+                    background: transparent;
+                    border: none;
+                    text-align: center;
+                    &:hover{
+                        background-color: #ffffff; 
+                    }
+                    option{  
+                        background-color: #ffffff;
+                        &:hover{
+                            background-color: #ffffff; 
+                        }
+                    }
+                }
+            }
+        }
+    
+        .lg-xl{
+            display: none;
+        }
+    
+    }
+}
+
+@mixin screen03 {
+    @media screen and (max-width: 640px) {
+        .container{
+            display: grid;
+            grid-template-columns:repeat(5,1fr);
+            grid-template-areas: 
+            ' slide slide slide slide slide '
+            'conteudo2 conteudo2 conteudo2 conteudo2 conteudo2'
+            ;
+        }
+        .conteudo{
+            border: none;
+            grid-template-columns:1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            'bloco01'
+            'bloco02'
+            'bloco03'
+            'bloco04'
+            'bloco05'
+            'bloco06'
+            ;
+        }
+    }
+}
+
+
+/*  TEMAS
+main - #3C2440 --- #557340 --- #A9BF5A --- #CFD984 --- #F2E0BD
+elegante - #0B0B0D --- #202626 --- #383F40 --- #D9B282 --- #8C5B3F
+blue - #002D5C --- #025797 --- #0968AD --- #248BDA --- #59A0D4
+festa - #62CDD9 --- #0AA605 --- #F2B705 --- #F25C05 --- #F21616
+preto_branco - #F2F2F2 --- #BFBFBF --- #737373 --- #404040--- #0D0D0D
+rosa - #590219 --- #8C0F3D --- #A6175A --- #D93280 --- #F241A3
+*/
+
+// FONTE ::: font-family: 'Merriweather Sans', sans-serif;
+ // light -- dark
+
+/*
+html[tema="light"]{   
+   // @include bc.templete();
+}   
+
+html[tema="dark"]{
+    //@include bc.templete();
+}
+*/
