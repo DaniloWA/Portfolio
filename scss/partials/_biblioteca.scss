@@ -16,28 +16,30 @@
 }
 
 @mixin textos{
+    font-size: 1rem;
     box-sizing: border-box;
     padding: 10px;
     border-radius: 25px;
     background-color: transparent;
     border: 2px solid transparent;
     color: rgba(0, 0, 0, 0.377);
-    min-width: 700px;
-    max-width: 700px;
-    max-height: 200px;
+    min-width: 20vh;
+    max-width: 100vh;
+    max-height: 50vh;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 5vh;
     &:hover{
-        background-color: rgba(0, 0, 0, 0.726);
+        background-color: rgba(0, 0, 0, 0.829);
         border: 2px solid rgba(0, 0, 0, 0.486);
         color: rgba(255, 255, 255, 0.575);
         input{
-            color: blue;
+            color: rgb(0, 0, 255);
         }
     }
     input{
         border-radius: 15px;
-        width: 10vh;
+        min-width: 10vh;
         margin-top: 2px;
         padding: 2px;
         border: none;
@@ -55,29 +57,29 @@
     }
 }
 
-@mixin slide($foto){
+@mixin slide($foto){ 
     .slide{
         grid-area: slide;
         border-bottom: 1px solid black;
         .foto01{
+            background-image: url("/midia/img/slide/bloco_Notas-LX.png");
             @include fotos;
-            background-image: url("/midia/img/projeto-bloco-notas.png");
             .textoFoto1{
                 @include textos;
                 display: none;
             }
         }
         .foto02{
+            background-image: url("/midia/img/slide/calculadora-LX.png");
             @include fotos;
-            background-image: url("/midia/img/terminalProjeto.png");
             .textoFoto2{
                 @include textos;
                 display: none;
             }
         }
         .foto03{
+            background-image: url("/midia/img/slide/key_projeto-LX.png");
             @include fotos;
-            background-image: url("/midia/img/keyCodeProjeto.png");
             .textoFoto3{
                 @include textos;
                 display: none;
@@ -140,86 +142,98 @@
 
     @include slide($foto);
 
-    *{
-        padding: 0;
-        margin: 0;
-        font-family: 'Merriweather Sans', sans-serif;
+    @media screen and (min-width:1201px) {
+        /*
+        .slide{
+            .foto01{
+                background-image: url("/midia/img/slide/bloco_Notas-LX.png");
+            }
+            .foto02{
+                background-image: url("/midia/img/slide/calculadora-LX.png");
+            }
+            .foto03{
+                background-image: url("/midia/img/slide/key_projeto-LX.png");
+            }
+        }    
+        */
+        .sm{
+            display: none;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+        
+        body {
+            background: -300px 0 url(/midia/img/fundo/147309.svg);
+            background-color: #202626;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr repeat(5,1fr) 1fr;
+            grid-template-areas: 
+            'slide slide slide slide slide slide slide'
+            '. conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 .'
+            ;
+        }
+        
+        .conteudo{
+            grid-area: conteudo2;
+            display: grid;
+            text-align: center;
+            background-color: rgb(177, 177, 177);
+            border-left:2px solid black ;
+            border-right:2px solid black ;
+            padding: 15px;
+            padding-top: 30px;
+            box-shadow: 0 10px 15px black ;
+            max-width: 100%;
+            min-height:30vh;
+            grid-template-columns:repeat(6,1fr);
+            column-gap: 1.5vh;
+            row-gap: 2.5vh;
+            grid-template-areas: 
+            'bloco01 bloco02 bloco03 bloco04 bloco05 bloco06'
+            ;
+        }
+        
+        .bloco01{
+            @include bloco();
+            grid-area:bloco01 ;
+        }
+        .bloco02{
+            @include bloco();
+            grid-area:bloco02 ;
+        }
+        .bloco03{
+            @include bloco();
+            grid-area:bloco03 ;
+        }
+        .bloco04{
+            @include bloco();
+            grid-area:bloco04 ;
+        }
+        .bloco05{
+            @include bloco();
+            grid-area:bloco05 ;
+        }
+        .bloco06{
+            @include bloco();
+            grid-area:bloco06 ;
+        }
+        
     }
-    
-    body {
-        background: -300px 0 url(/midia/img/fundo/147309.svg);
-        background-color: #202626;
-    }
-    .container{
-        display: grid;
-        grid-template-columns: 1fr repeat(5,1fr) 1fr;
-        grid-template-areas: 
-        'slide slide slide slide slide slide slide'
-        '. conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 .'
-        ;
-    }
-    
-   
-   
-    .conteudo{
-        grid-area: conteudo2;
-        display: grid;
-        text-align: center;
-        background-color: rgb(177, 177, 177);
-        border-left:2px solid black ;
-        border-right:2px solid black ;
-        padding: 15px;
-        padding-top: 30px;
-        box-shadow: 0 10px 15px black ;
-        max-width: 100%;
-        min-height:30vh;
-        grid-template-columns:repeat(6,1fr);
-        column-gap: 1.5vh;
-        row-gap: 2.5vh;
-        grid-template-areas: 
-        'bloco01 bloco02 bloco03 bloco04 bloco05 bloco06'
-        ;
-    }
-    
-    .bloco01{
-        @include bloco();
-        grid-area:bloco01 ;
-    }
-    .bloco02{
-        @include bloco();
-        grid-area:bloco02 ;
-    }
-    .bloco03{
-        @include bloco();
-        grid-area:bloco03 ;
-    }
-    .bloco04{
-        @include bloco();
-        grid-area:bloco04 ;
-    }
-    .bloco05{
-        @include bloco();
-        grid-area:bloco05 ;
-    }
-    .bloco06{
-        @include bloco();
-        grid-area:bloco06 ;
-    }
-    
 }
 
 @mixin navBar{
-    .sm{
-        display: none;
-    }
-    
     header.lg-xl{
         nav{
             background-color: #ffffff;
             display: grid;
             min-width: 100%;
             min-height: 5vh;
-            max-height: 5vh;
+            max-height: 10vh;
             grid-template-columns: 0.3fr repeat(5, 2fr) 0.3fr;
             font-weight: bold;
             grid-template-areas:  
@@ -295,8 +309,36 @@
     }    
 }
 
+
 @mixin screen01 {
     @media screen and (max-width: 1200px) {
+        /*
+        .slide{
+            .foto01{
+                background-image: url("/midia/img/slide/bloco_Notas-MD.png");
+            }
+            .foto02{
+                background-image: url("/midia/img/slide/calculadora-MD.png");
+            }
+            .foto03{
+                background-image: url("/midia/img/slide/key_projeto-MD.png");
+            }
+        }  
+        */
+        .sm{
+            display: none;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+        
+        body {
+            background: -300px 0 url(/midia/img/fundo/147309.svg);
+            background-color: #202626;
+        }
+
         .container{
             display: grid;
             grid-template-columns: 0.5fr repeat(5,1fr) 0.5fr;
@@ -306,8 +348,6 @@
             ;
         }
         
-       
-       
         .conteudo{
             grid-area: conteudo2;
             display: grid;
@@ -329,29 +369,133 @@
             'bloco04 bloco05 bloco06'
             ;
         }
+        
+        .bloco01{
+            @include bloco();
+            grid-area:bloco01 ;
+        }
+        .bloco02{
+            @include bloco();
+            grid-area:bloco02 ;
+        }
+        .bloco03{
+            @include bloco();
+            grid-area:bloco03 ;
+        }
+        .bloco04{
+            @include bloco();
+            grid-area:bloco04 ;
+        }
+        .bloco05{
+            @include bloco();
+            grid-area:bloco05 ;
+        }
+        .bloco06{
+            @include bloco();
+            grid-area:bloco06 ;
+        }
 
         header.lg-xl{
             nav{
                 max-height: 10vh;
             }
         }
-      }
+        
+    }
+
+
+    
 }
 
 @mixin screen02 {
     @media screen and (max-width: 760px) {
+        /*
+        .slide{
+            .foto01{
+                background-image: url("/midia/img/slide/bloco_Notas-SM.png");
+            }
+            .foto02{
+                background-image: url("/midia/img/slide/calculadora-SM.png");
+            }
+            .foto03{
+                background-image: url("/midia/img/slide/key_projeto-SM.png");
+            }
+        }  
+        */        
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+        
+        body {
+            background: -300px 0 url(/midia/img/fundo/147309.svg);
+            background-color: #202626;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 0.5fr repeat(5,1fr) 0.5fr;
+            grid-template-areas: 
+            'slide slide slide slide slide slide slide'
+            '. conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 .'
+            ;
+        }
+        
         .conteudo{
+            grid-area: conteudo2;
+            display: grid;
+            text-align: center;
+            background-color: rgb(177, 177, 177);
+            border-left:2px solid black ;
+            border-right:2px solid black ;
+            padding: 15px;
+            padding-top: 30px;
+            box-shadow: 0 10px 15px black ;
+            max-width: 100%;
+            min-height:30vh;
             grid-template-columns:repeat(2,1fr);
             grid-template-rows: 1fr 1fr 1fr;
+            column-gap: 1.5vh;
+            row-gap: 2.5vh;
             grid-template-areas: 
             'bloco01 bloco02'
             'bloco03 bloco04'
             'bloco05 bloco06'
             ;
         }
+        
+        .bloco01{
+            @include bloco();
+            grid-area:bloco01 ;
+        }
+        .bloco02{
+            @include bloco();
+            grid-area:bloco02 ;
+        }
+        .bloco03{
+            @include bloco();
+            grid-area:bloco03 ;
+        }
+        .bloco04{
+            @include bloco();
+            grid-area:bloco04 ;
+        }
+        .bloco05{
+            @include bloco();
+            grid-area:bloco05 ;
+        }
+        .bloco06{
+            @include bloco();
+            grid-area:bloco06 ;
+        }
+
+        .lg-xl{
+            display: none;
+        }
+
         .sm{
-            display:inline;
-    
+            display: inline;
             nav{
                 background-color: #ffffff;
                 display: grid;
@@ -418,16 +562,36 @@
                 }
             }
         }
-    
-        .lg-xl{
-            display: none;
-        }
-    
     }
 }
+ 
 
 @mixin screen03 {
     @media screen and (max-width: 640px) {
+/*
+        .slide{
+            .foto01{
+                background-image: url("/midia/img/slide/bloco_Notas-SM.png");
+            }
+            .foto02{
+                background-image: url("/midia/img/slide/calculadora-SM.png");
+            }
+            .foto03{
+                background-image: url("/midia/img/slide/key_projeto-SM.png");
+            }
+        }          
+*/
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+        
+        body {
+            background: -300px 0 url(/midia/img/fundo/147309.svg);
+            background-color: #202626;
+        }
+
         .container{
             display: grid;
             grid-template-columns:repeat(5,1fr);
@@ -436,10 +600,24 @@
             'conteudo2 conteudo2 conteudo2 conteudo2 conteudo2'
             ;
         }
+
         .conteudo{
+            grid-area: conteudo2;
+            display: grid;
+            text-align: center;
+            background-color: rgb(177, 177, 177);
+            border-left:2px solid black ;
+            border-right:2px solid black ;
+            padding: 15px;
+            padding-top: 30px;
+            box-shadow: 0 10px 15px black ;
+            max-width: 100%;
+            min-height:30vh;
             border: none;
             grid-template-columns:1fr;
             grid-template-rows: 1fr;
+            column-gap: 1.5vh;
+            row-gap: 2.5vh;
             grid-template-areas: 
             'bloco01'
             'bloco02'
@@ -449,9 +627,35 @@
             'bloco06'
             ;
         }
+        
+        .bloco01{
+            @include bloco();
+            grid-area:bloco01 ;
+        }
+        .bloco02{
+            @include bloco();
+            grid-area:bloco02 ;
+        }
+        .bloco03{
+            @include bloco();
+            grid-area:bloco03 ;
+        }
+        .bloco04{
+            @include bloco();
+            grid-area:bloco04 ;
+        }
+        .bloco05{
+            @include bloco();
+            grid-area:bloco05 ;
+        }
+        .bloco06{
+            @include bloco();
+            grid-area:bloco06 ;
+        }
     }
-}
 
+
+}
 
 /*  TEMAS
 main - #3C2440 --- #557340 --- #A9BF5A --- #CFD984 --- #F2E0BD
@@ -460,12 +664,12 @@ blue - #002D5C --- #025797 --- #0968AD --- #248BDA --- #59A0D4
 festa - #62CDD9 --- #0AA605 --- #F2B705 --- #F25C05 --- #F21616
 preto_branco - #F2F2F2 --- #BFBFBF --- #737373 --- #404040--- #0D0D0D
 rosa - #590219 --- #8C0F3D --- #A6175A --- #D93280 --- #F241A3
-*/
+
 
 // FONTE ::: font-family: 'Merriweather Sans', sans-serif;
  // light -- dark
 
-/*
+
 html[tema="light"]{   
    // @include bc.templete();
 }   
