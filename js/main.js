@@ -1,13 +1,14 @@
-let botao = document.getElementsByClassName("btnSlide")
+let botao = document.getElementsByClassName("btnSlide") 
+
 for(let i = 0; i < botao.length; i++){
-    botao[i].onclick = function() { slide() }
+    botao[i].onclick = function() { slide() }  
 }
+
 
 
 function slide(){ //Escolhe foto do slide
     let foto = document.getElementsByTagName('html')[0].getAttribute('slide');
     let slide = document.getElementsByTagName('html')[0]
-    console.log("Var foto: " + foto)
 
     if(foto == "foto1"){
         slide.setAttribute("slide", "foto2")

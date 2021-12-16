@@ -1,8 +1,6 @@
 @use "partials/biblioteca" as bc;
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 
-
-
 html[slide="foto1"]{   
     @include bc.container("foto1");
 }
@@ -21,5 +19,7 @@ html[slide="foto3"]{
 @include bc.screen03();
 
 @include bc.navBar();
+
+
 
 
