@@ -1,4 +1,7 @@
 @use "partials/biblioteca" as bc;
+@use "partials/sobre" as sb;
+@use "partials/contatos" as ct;
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 
 html[slide="foto1"]{   
@@ -11,7 +14,6 @@ html[slide="foto3"]{
     @include bc.container("foto3");
 }  
  
-
 @include bc.screen01();
   
 @include bc.screen02();
@@ -20,6 +22,32 @@ html[slide="foto3"]{
 
 @include bc.navBar();
 
+html[page="sobre"]{   
+    @include sb.sobre();
+}
 
+html[page="contatos"]{   
+    @include ct.contatos();
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****/
 
 

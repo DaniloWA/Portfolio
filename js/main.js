@@ -1,25 +1,39 @@
-let botao = document.getElementsByClassName("btnSlide") 
+import * as index from "./index.js"
+import * as sobre from "./sobre.js"
+import * as contatos from "./contatos.js"
+import * as projetos from "./projetos.js"
 
-for(let i = 0; i < botao.length; i++){
-    botao[i].onclick = function() { slide() }  
+let page = document.getElementsByTagName('html')[0].getAttribute('page');
+
+switch(page){
+    case "index": 
+    console.log("Case: " + page);
+    window.onload = index.botaoADC(); 
+    break;
+
+    case "sobre": 
+    console.log("Case: " + page); 
+   // window.onload = sobre.slide();
+    break;
+
+    case "contatos": console.log("Case: " + page);
+    //window.onload = contatos.slide();
+    break;    
+
+    case "projetos": console.log("Case: " + page); 
+   // window.onload = projetos.slide();
+    break;
 }
 
 
 
-function slide(){ //Escolhe foto do slide
-    let foto = document.getElementsByTagName('html')[0].getAttribute('slide');
-    let slide = document.getElementsByTagName('html')[0]
+/*
+        dadosEntrada.addEventListener("keypress", function(e) {
+            if(e.key === 'Enter') {
+                console.log("Apertou Enter")
+                start()
+            }
+        }
+        )
+*/
 
-    if(foto == "foto1"){
-        slide.setAttribute("slide", "foto2")
-        return
-    }
-    if(foto == "foto2"){
-        slide.setAttribute("slide", "foto3")
-        return
-    }
-    if(foto == "foto3"){
-        slide.setAttribute("slide", "foto1")
-        return
-    }
-}

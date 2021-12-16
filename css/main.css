@@ -37,7 +37,7 @@ html[slide=foto1] .slide {
   border-bottom: 1px solid black;
 }
 html[slide=foto1] .slide .foto01 {
-  background-image: url("/midia/img/slide/bloco_Notas-LX.png");
+  background-image: url("../midia/img/slide/bloco_Notas-LX.png");
   min-height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -318,7 +318,7 @@ html[slide=foto2] .slide {
   border-bottom: 1px solid black;
 }
 html[slide=foto2] .slide .foto01 {
-  background-image: url("/midia/img/slide/bloco_Notas-LX.png");
+  background-image: url("../midia/img/slide/bloco_Notas-LX.png");
   min-height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -599,7 +599,7 @@ html[slide=foto3] .slide {
   border-bottom: 1px solid black;
 }
 html[slide=foto3] .slide .foto01 {
-  background-image: url("/midia/img/slide/bloco_Notas-LX.png");
+  background-image: url("../midia/img/slide/bloco_Notas-LX.png");
   min-height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1255,7 +1255,7 @@ header.lg-xl nav {
   background-color: #ffffff;
   display: grid;
   min-width: 100%;
-  min-height: 5vh;
+  min-height: 6vh;
   max-height: 10vh;
   grid-template-columns: 0.3fr repeat(5, 2fr) 0.3fr;
   font-weight: bold;
@@ -1325,4 +1325,197 @@ header.lg-xl nav ul li a:active {
   border-radius: 50%;
   background-color: #303030;
 }
+
+@media screen and (min-width: 1201px) {
+  html[page=sobre] .container {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: ". . . . . . ." ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 ." ". . . . . . .";
+    grid-template-rows: 0.5fr 1fr 0.8fr;
+  }
+  html[page=sobre] .conteudoCartao {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(14, 14, 14, 0.938);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 30px #858484;
+    max-width: 100%;
+    min-height: 30vh;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.5vh;
+    row-gap: 2.5vh;
+    grid-template-areas: "FotoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
+  }
+  html[page=sobre] .FotoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 50%;
+    background-color: white;
+    min-width: 30vh;
+    min-height: 30vh;
+    padding: 5px;
+    grid-area: FotoPerfil;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background: -90px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
+  }
+  html[page=sobre] .textoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    grid-area: textoPerfil;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html[page=sobre] .container {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: ". . . . . . ." ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 ." ". . . . . . .";
+    grid-template-rows: 0.5fr 1fr 0.8fr;
+  }
+  html[page=sobre] .conteudoCartao {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(14, 14, 14, 0.938);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 30px #858484;
+    max-width: 100%;
+    min-height: 20vh;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.5vh;
+    row-gap: 2.5vh;
+    grid-template-areas: "FotoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
+  }
+  html[page=sobre] .FotoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 50%;
+    background-color: white;
+    min-width: 25vh;
+    min-height: 25vh;
+    padding: 5px;
+    grid-area: FotoPerfil;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background: -110px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
+  }
+  html[page=sobre] .textoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    grid-area: textoPerfil;
+  }
+}
+@media screen and (max-width: 900px) {
+  html[page=sobre] .container {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: ". . . . . . ." ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 ." ". . . . . . .";
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+  }
+  html[page=sobre] .conteudoCartao {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(14, 14, 14, 0.938);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 30px #858484;
+    max-width: 100%;
+    min-height: 30vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.5vh;
+    row-gap: 2.5vh;
+    grid-template-areas: ". . FotoPerfil FotoPerfil . ." "textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
+  }
+  html[page=sobre] .FotoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 50%;
+    background-color: white;
+    min-width: 30vh;
+    min-height: 30vh;
+    padding: 5px;
+    grid-area: FotoPerfil;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background: -90px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
+  }
+  html[page=sobre] .textoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    grid-area: textoPerfil;
+  }
+}
+@media screen and (max-width: 640px) {
+  html[page=sobre] .container {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2";
+    grid-template-rows: 1fr;
+  }
+  html[page=sobre] .conteudoCartao {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(14, 14, 14, 0.938);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px #858484;
+    max-width: 100%;
+    min-height: 10vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.8fr 1fr;
+    grid-template-areas: "FotoPerfil FotoPerfil FotoPerfil FotoPerfil FotoPerfil FotoPerfil" "textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
+  }
+  html[page=sobre] .FotoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 50%;
+    background-color: white;
+    min-width: 40vh;
+    min-height: 40vh;
+    max-width: 800vh;
+    max-height: 800vh;
+    padding: 5px;
+    grid-area: FotoPerfil;
+    justify-self: center;
+    align-self: center;
+    background: -80px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  html[page=sobre] .textoPerfil {
+    justify-self: center;
+    align-self: center;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    grid-area: textoPerfil;
+  }
+}
+
+/*****/
 /*# sourceMappingURL=main.css.map */
