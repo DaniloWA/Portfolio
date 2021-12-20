@@ -28,6 +28,10 @@ html[tema="dark"]{
   font-weight: bold;
 }
 
+.listasNone {
+  list-style: none;
+}
+
 @media screen and (min-width: 1201px) {
   html[page=sobre] .container {
     display: grid;

@@ -3,6 +3,7 @@ console.log("Confirm CONTATOS")
 const myForm = document.querySelector('#my-form');
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
+const telefoneInput = document.querySelector('#telefone')
 const subimitButton = document.querySelector('#btnEnviar');
 const errorMessage = document.querySelector('.msg');
 
@@ -13,6 +14,7 @@ subimitButton.addEventListener('click', function(e){
 
     const nameValue = nameInput.value;
     const emailValue = emailInput.value;
+    const telefoneValue = telefoneInput.value;
 
     if(nameValue == '' || emailValue == ''){
         errorMessage.textContent = "Por favor preencha as areas!"
@@ -27,11 +29,12 @@ subimitButton.addEventListener('click', function(e){
 
     const li = document.createElement('li')
     li.classList = 'item'
-    li.innerHTML = `Nome: ${nameValue} <br> Email: ${emailValue}`
+    li.innerHTML = `Nome: ${nameValue} <br> Email: ${emailValue} <br> Telefone: ${telefoneValue}`
 
     items.appendChild(li)
 
     nameInput.value = '';
     emailInput.value = '';
+    telefoneInput.value = '';
 })
  
