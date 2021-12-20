@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="shortcut icon" href="/midia/img/favicon/favicon-32x32.png" type="image/x-icon">
 </head>
-<body>
+<body class="bodyContatos">
     
 <header class="lg-xl"> 
     <nav>
@@ -43,37 +43,54 @@
             <option href="sobre.html" value="Sobre">Sobre</option>
             <option href="contatos.html" value="Contatos">Contatos</option>
             <option href="projetos.html" value="Projetos">Projetos</option>
-            </select>
+        </select>
 
         <a class="toggle" href="#"><img class="imgTema" src="/midia/img/iconTemaGrande.png" alt="temas"> </a> <p class="txtTema"> Tema: </p> 
     </nav>
 </header>
 
-<main class="container">
-    <div class="conteudo">
-        <div class="iframeMap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706100.7257864744!2d-54.53364808009407!3d69.77817984247318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ef34bbd6bb86caf%3A0x94964a6574125885!2sDisko%20%C3%98er!5e0!3m2!1spt-PT!2spt!4v1639942647533!5m2!1spt-PT!2spt"></iframe>
-        </div>
-        <div class="informacao">
-           <p>Disko Øer, Groenlândia</p>
-           <p>888-0123-4567</p>
-           <p>910 662 693</p>
-           <p>email: aqui@gmail.com</p>
-        </div>
-        <div class="formulario">
-            <form action="#" >
-                <label for="name" id="nameLabel">Seu nome : </label>
-                <input type="text" id="name" placeholder="name">
-                
-                <label for="email" id="emailLabel">Email</label>
-                <input type="email" name="email" id="email" placeholder="email">
-    
-                <label for="txtArea" id="txtAreaLabel">Escreva sua mensagem </label>
-                <textarea name="txtArea" id="txtArea" cols="30" rows="10"></textarea>
-            </form>
+<main class="containerContatos">
+    <div class="conteudoContatos">
+        <div class="box">
+            <fieldset>
+                <legend> Formulario de Contato</legend>
+                <form action="#" id="my-form" >
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="name" class="inputUser"  required autocomplete="off">
+                        <label for="name" class="labelInput" >Nome Completo </label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="email" id="email" class="inputUser" autocomplete="off" required>
+                        <label for="email" class="labelInput" >Email</label>
+                    </div>
+
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" autocomplete="off"  required>
+                        <label for="telefone" class="labelInput" >Telefone</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <label for="txtArea" id="txtLabelArea">Escreva sua mensagem : </label>
+                        <textarea name="txtArea" id="txtArea" autocomplete="off" ></textarea>
+                    </div>
+                    <br><br>
+                    <div class="msg"></div>
+                    <br>
+                    <input type="submit" name="btnEnviar" id="btnEnviar" value="Enviar">
+                </form>
+            <ul class="items">
+            <!--<li class="item">item 1</li>
+                <li class="item">item 2</li>
+                <li class="item">item 3</li>
+                -->
+            </ul>
+            </fieldset> 
         </div>
     </div>
 </main>
+
 <footer>Danilo Oliveira</footer>
 <script type="module" src="js/main.js"></script>
 </body>

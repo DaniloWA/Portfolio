@@ -20,6 +20,924 @@ html[tema="dark"]{
     //@include bc.templete();
 }
 */
+.error {
+  color: red;
+  background: yellow;
+  padding: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1201px) {
+  html[page=sobre] .container {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: ". . . . . . ." ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 ." ". . . . . . .";
+    grid-template-rows: 0.5fr 1fr 0.8fr;
+  }
+  html[page=sobre] .conteudoCartao {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(14, 14, 14, 0.938);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 30px #858484;
+    max-width: 100%;
+    min-height: 30vh;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.5vh;
+    row-gap: 2.5vh;
+    grid-template-areas: "FotoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
+  }
+  html[page=sobre] .FotoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 50%;
+    background-color: white;
+    min-width: 30vh;
+    min-height: 30vh;
+    padding: 5px;
+    grid-area: FotoPerfil;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background: -90px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
+  }
+  html[page=sobre] .textoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    grid-area: textoPerfil;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html[page=sobre] .container {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: ". . . . . . ." ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 ." ". . . . . . .";
+    grid-template-rows: 0.5fr 1fr 0.8fr;
+  }
+  html[page=sobre] .conteudoCartao {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(14, 14, 14, 0.938);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 30px #858484;
+    max-width: 100%;
+    min-height: 20vh;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.5vh;
+    row-gap: 2.5vh;
+    grid-template-areas: "FotoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
+  }
+  html[page=sobre] .FotoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 50%;
+    background-color: white;
+    min-width: 25vh;
+    min-height: 25vh;
+    padding: 5px;
+    grid-area: FotoPerfil;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background: -110px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
+  }
+  html[page=sobre] .textoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    grid-area: textoPerfil;
+  }
+}
+@media screen and (max-width: 900px) {
+  html[page=sobre] .container {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: ". . . . . . ." ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 ." ". . . . . . .";
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+  }
+  html[page=sobre] .conteudoCartao {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(14, 14, 14, 0.938);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 30px #858484;
+    max-width: 100%;
+    min-height: 30vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.5vh;
+    row-gap: 2.5vh;
+    grid-template-areas: ". . FotoPerfil FotoPerfil . ." "textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
+  }
+  html[page=sobre] .FotoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 50%;
+    background-color: white;
+    min-width: 30vh;
+    min-height: 30vh;
+    padding: 5px;
+    grid-area: FotoPerfil;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background: -90px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
+  }
+  html[page=sobre] .textoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    grid-area: textoPerfil;
+  }
+}
+@media screen and (max-width: 640px) {
+  html[page=sobre] .container {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2";
+    grid-template-rows: 1fr;
+  }
+  html[page=sobre] .conteudoCartao {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(14, 14, 14, 0.938);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px #858484;
+    max-width: 100%;
+    min-height: 10vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.8fr 1fr;
+    grid-template-areas: "FotoPerfil FotoPerfil FotoPerfil FotoPerfil FotoPerfil FotoPerfil" "textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
+  }
+  html[page=sobre] .FotoPerfil {
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 50%;
+    background-color: white;
+    min-width: 40vh;
+    min-height: 40vh;
+    max-width: 800vh;
+    max-height: 800vh;
+    padding: 5px;
+    grid-area: FotoPerfil;
+    justify-self: center;
+    align-self: center;
+    background: -80px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  html[page=sobre] .textoPerfil {
+    justify-self: center;
+    align-self: center;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    grid-area: textoPerfil;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  html[page=contatos] .bodyContatos {
+    background: none;
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=contatos] .box {
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    min-width: 375px;
+  }
+  html[page=contatos] fieldset {
+    border: 3px solid dodgerblue;
+    padding: 10px;
+    padding-top: 25px;
+  }
+  html[page=contatos] legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  html[page=contatos] .inputBox {
+    position: relative;
+  }
+  html[page=contatos] .inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  html[page=contatos] .labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  html[page=contatos] .inputUser:focus ~ .labelInput, html[page=contatos] .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+    background: none;
+  }
+  html[page=contatos] #txtArea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    min-height: 20vh;
+    padding: 10px;
+    letter-spacing: 2px;
+    background-color: darkgray;
+    font-weight: bold;
+    margin-top: 5px;
+    outline: 0;
+  }
+  html[page=contatos] #txtLabelArea {
+    font-size: 12px;
+  }
+  html[page=contatos] #btnEnviar {
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  html[page=contatos] #btnEnviar:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=contatos] footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html[page=contatos] .bodyContatos {
+    background: none;
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=contatos] .box {
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    min-width: 375px;
+  }
+  html[page=contatos] fieldset {
+    border: 3px solid dodgerblue;
+    padding: 10px;
+    padding-top: 25px;
+  }
+  html[page=contatos] legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  html[page=contatos] .inputBox {
+    position: relative;
+  }
+  html[page=contatos] .inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  html[page=contatos] .labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  html[page=contatos] .inputUser:focus ~ .labelInput, html[page=contatos] .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+    background: none;
+  }
+  html[page=contatos] #txtArea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    min-height: 20vh;
+    padding: 10px;
+    letter-spacing: 2px;
+    background-color: darkgray;
+    font-weight: bold;
+    margin-top: 5px;
+    outline: 0;
+  }
+  html[page=contatos] #txtLabelArea {
+    font-size: 12px;
+  }
+  html[page=contatos] #btnEnviar {
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  html[page=contatos] #btnEnviar:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=contatos] footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  html[page=contatos] .bodyContatos {
+    background: none;
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=contatos] .box {
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    min-width: 375px;
+  }
+  html[page=contatos] fieldset {
+    border: 3px solid dodgerblue;
+    padding: 10px;
+    padding-top: 25px;
+  }
+  html[page=contatos] legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  html[page=contatos] .inputBox {
+    position: relative;
+  }
+  html[page=contatos] .inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  html[page=contatos] .labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  html[page=contatos] .inputUser:focus ~ .labelInput, html[page=contatos] .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+    background: none;
+  }
+  html[page=contatos] #txtArea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    min-height: 20vh;
+    padding: 10px;
+    letter-spacing: 2px;
+    background-color: darkgray;
+    font-weight: bold;
+    margin-top: 5px;
+    outline: 0;
+  }
+  html[page=contatos] #txtLabelArea {
+    font-size: 12px;
+  }
+  html[page=contatos] #btnEnviar {
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  html[page=contatos] #btnEnviar:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=contatos] footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  html[page=contatos] .bodyContatos {
+    background: none;
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=contatos] .box {
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    min-width: 300px;
+  }
+  html[page=contatos] fieldset {
+    border: 3px solid dodgerblue;
+    padding: 10px;
+    padding-top: 25px;
+  }
+  html[page=contatos] legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  html[page=contatos] .inputBox {
+    position: relative;
+  }
+  html[page=contatos] .inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  html[page=contatos] .labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  html[page=contatos] .inputUser:focus ~ .labelInput, html[page=contatos] .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+    background: none;
+  }
+  html[page=contatos] #txtArea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    min-height: 20vh;
+    padding: 10px;
+    letter-spacing: 2px;
+    background-color: darkgray;
+    font-weight: bold;
+    margin-top: 5px;
+    outline: 0;
+  }
+  html[page=contatos] #txtLabelArea {
+    font-size: 12px;
+  }
+  html[page=contatos] #btnEnviar {
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  html[page=contatos] #btnEnviar:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=contatos] footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 321px) {
+  html[page=contatos] .bodyContatos {
+    background: none;
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=contatos] .box {
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    min-width: 300px;
+  }
+  html[page=contatos] fieldset {
+    border: 3px solid dodgerblue;
+    padding: 10px;
+    padding-top: 25px;
+  }
+  html[page=contatos] legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  html[page=contatos] .inputBox {
+    position: relative;
+  }
+  html[page=contatos] .inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  html[page=contatos] .labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  html[page=contatos] .inputUser:focus ~ .labelInput, html[page=contatos] .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+    background: none;
+  }
+  html[page=contatos] #txtArea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    min-height: 20vh;
+    padding: 10px;
+    letter-spacing: 2px;
+    background-color: darkgray;
+    font-weight: bold;
+    margin-top: 5px;
+    outline: 0;
+  }
+  html[page=contatos] #txtLabelArea {
+    font-size: 12px;
+  }
+  html[page=contatos] #btnEnviar {
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  html[page=contatos] #btnEnviar:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=contatos] footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 321px) {
+  html[page=contatos] .bodyContatos {
+    background: none;
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=contatos] .box {
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    min-width: 90%;
+  }
+  html[page=contatos] fieldset {
+    border: 3px solid dodgerblue;
+    padding: 10px;
+    padding-top: 25px;
+  }
+  html[page=contatos] legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  html[page=contatos] .inputBox {
+    position: relative;
+  }
+  html[page=contatos] .inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  html[page=contatos] .labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  html[page=contatos] .inputUser:focus ~ .labelInput, html[page=contatos] .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+    background: none;
+  }
+  html[page=contatos] #txtArea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    min-height: 20vh;
+    padding: 10px;
+    letter-spacing: 2px;
+    background-color: darkgray;
+    font-weight: bold;
+    margin-top: 5px;
+    outline: 0;
+  }
+  html[page=contatos] #txtLabelArea {
+    font-size: 12px;
+  }
+  html[page=contatos] #btnEnviar {
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  html[page=contatos] #btnEnviar:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=contatos] footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 621px) and (orientation: landscape) {
+  html[page=contatos] .bodyContatos {
+    background: none;
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=contatos] .box {
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    min-width: 280px;
+  }
+  html[page=contatos] fieldset {
+    border: 3px solid dodgerblue;
+    padding: 10px;
+    padding-top: 25px;
+  }
+  html[page=contatos] legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  html[page=contatos] .inputBox {
+    position: relative;
+  }
+  html[page=contatos] .inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  html[page=contatos] .labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  html[page=contatos] .inputUser:focus ~ .labelInput, html[page=contatos] .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+    background: none;
+  }
+  html[page=contatos] #txtArea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    min-height: 20vh;
+    padding: 10px;
+    letter-spacing: 2px;
+    background-color: darkgray;
+    font-weight: bold;
+    margin-top: 5px;
+    outline: 0;
+  }
+  html[page=contatos] #txtLabelArea {
+    font-size: 12px;
+  }
+  html[page=contatos] #btnEnviar {
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  html[page=contatos] #btnEnviar:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=contatos] footer {
+    position: absolute;
+    top: 600px;
+  }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  html[page=contatos] .bodyContatos {
+    background: none;
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=contatos] .box {
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    min-width: 380px;
+  }
+  html[page=contatos] fieldset {
+    border: 3px solid dodgerblue;
+    padding: 10px;
+    padding-top: 25px;
+  }
+  html[page=contatos] legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  html[page=contatos] .inputBox {
+    position: relative;
+  }
+  html[page=contatos] .inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  html[page=contatos] .labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  html[page=contatos] .inputUser:focus ~ .labelInput, html[page=contatos] .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+    background: none;
+  }
+  html[page=contatos] #txtArea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    min-height: 20vh;
+    padding: 10px;
+    letter-spacing: 2px;
+    background-color: darkgray;
+    font-weight: bold;
+    margin-top: 5px;
+    outline: 0;
+  }
+  html[page=contatos] #txtLabelArea {
+    font-size: 12px;
+  }
+  html[page=contatos] #btnEnviar {
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  html[page=contatos] #btnEnviar:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=contatos] footer {
+    position: absolute;
+    top: 600px;
+  }
+}
+
 html[slide=foto1] footer {
   background-color: transparent;
   margin-top: 2vh;
@@ -1325,416 +2243,6 @@ header.lg-xl nav ul li a:active {
   transition: 0ms;
   border-radius: 50%;
   background-color: #303030;
-}
-
-@media screen and (min-width: 1201px) {
-  html[page=sobre] .container {
-    display: grid;
-    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
-    grid-template-areas: ". . . . . . ." ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 ." ". . . . . . .";
-    grid-template-rows: 0.5fr 1fr 0.8fr;
-  }
-  html[page=sobre] .conteudoCartao {
-    grid-area: conteudo2;
-    display: grid;
-    text-align: center;
-    background-color: rgba(14, 14, 14, 0.938);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 0 30px #858484;
-    max-width: 100%;
-    min-height: 30vh;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 1.5vh;
-    row-gap: 2.5vh;
-    grid-template-areas: "FotoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
-  }
-  html[page=sobre] .FotoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 50%;
-    background-color: white;
-    min-width: 30vh;
-    min-height: 30vh;
-    padding: 5px;
-    grid-area: FotoPerfil;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background: -90px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
-  }
-  html[page=sobre] .textoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 15px;
-    background-color: white;
-    padding: 5px;
-    grid-area: textoPerfil;
-  }
-}
-@media screen and (max-width: 1200px) {
-  html[page=sobre] .container {
-    display: grid;
-    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
-    grid-template-areas: ". . . . . . ." ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 ." ". . . . . . .";
-    grid-template-rows: 0.5fr 1fr 0.8fr;
-  }
-  html[page=sobre] .conteudoCartao {
-    grid-area: conteudo2;
-    display: grid;
-    text-align: center;
-    background-color: rgba(14, 14, 14, 0.938);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 0 30px #858484;
-    max-width: 100%;
-    min-height: 20vh;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 1.5vh;
-    row-gap: 2.5vh;
-    grid-template-areas: "FotoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
-  }
-  html[page=sobre] .FotoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 50%;
-    background-color: white;
-    min-width: 25vh;
-    min-height: 25vh;
-    padding: 5px;
-    grid-area: FotoPerfil;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background: -110px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
-  }
-  html[page=sobre] .textoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 15px;
-    background-color: white;
-    padding: 5px;
-    grid-area: textoPerfil;
-  }
-}
-@media screen and (max-width: 900px) {
-  html[page=sobre] .container {
-    display: grid;
-    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
-    grid-template-areas: ". . . . . . ." ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 ." ". . . . . . .";
-    grid-template-rows: 0.1fr 1fr 0.1fr;
-  }
-  html[page=sobre] .conteudoCartao {
-    grid-area: conteudo2;
-    display: grid;
-    text-align: center;
-    background-color: rgba(14, 14, 14, 0.938);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 0 30px #858484;
-    max-width: 100%;
-    min-height: 30vh;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 1fr;
-    column-gap: 1.5vh;
-    row-gap: 2.5vh;
-    grid-template-areas: ". . FotoPerfil FotoPerfil . ." "textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
-  }
-  html[page=sobre] .FotoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 50%;
-    background-color: white;
-    min-width: 30vh;
-    min-height: 30vh;
-    padding: 5px;
-    grid-area: FotoPerfil;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background: -90px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
-  }
-  html[page=sobre] .textoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 15px;
-    background-color: white;
-    padding: 5px;
-    grid-area: textoPerfil;
-  }
-}
-@media screen and (max-width: 640px) {
-  html[page=sobre] .container {
-    display: grid;
-    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
-    grid-template-areas: "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2";
-    grid-template-rows: 1fr;
-  }
-  html[page=sobre] .conteudoCartao {
-    grid-area: conteudo2;
-    display: grid;
-    text-align: center;
-    background-color: rgba(14, 14, 14, 0.938);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 0 20px #858484;
-    max-width: 100%;
-    min-height: 10vh;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 0.8fr 1fr;
-    grid-template-areas: "FotoPerfil FotoPerfil FotoPerfil FotoPerfil FotoPerfil FotoPerfil" "textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
-  }
-  html[page=sobre] .FotoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 50%;
-    background-color: white;
-    min-width: 40vh;
-    min-height: 40vh;
-    max-width: 800vh;
-    max-height: 800vh;
-    padding: 5px;
-    grid-area: FotoPerfil;
-    justify-self: center;
-    align-self: center;
-    background: -80px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-  }
-  html[page=sobre] .textoPerfil {
-    justify-self: center;
-    align-self: center;
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 15px;
-    background-color: white;
-    padding: 5px;
-    grid-area: textoPerfil;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  html[page=contatos] .container {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
-    grid-template-rows: 0.1fr 1fr 0.5fr;
-    grid-template-areas: ". . . . . . ." ". conteudo conteudo conteudo conteudo conteudo ." ". . . . . . .";
-  }
-  html[page=contatos] .conteudo {
-    box-sizing: border-box;
-    grid-area: conteudo;
-    display: grid;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.938);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 8px;
-    box-shadow: 0 0 30px #858484;
-    max-width: 100%;
-    min-height: 20vh;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 1.5vh;
-    row-gap: 2.5vh;
-    grid-template-areas: "iframeMap iframeMap iframeMap informacao formulario formulario" "iframeMap iframeMap iframeMap informacao formulario formulario" "iframeMap iframeMap iframeMap informacao formulario formulario";
-  }
-  html[page=contatos] .iframeMap {
-    box-sizing: border-box;
-    grid-area: iframeMap;
-    justify-self: start;
-    align-self: center;
-  }
-  html[page=contatos] .iframeMap iframe {
-    width: 60vh;
-    height: 60vh;
-    border: 1px black solid;
-  }
-  html[page=contatos] .iframeMap iframe:hover {
-    border: 3px #4d4d4d solid;
-  }
-  html[page=contatos] .informacao {
-    grid-area: informacao;
-    justify-self: center;
-    align-self: center;
-  }
-  html[page=contatos] .formulario {
-    display: grid;
-    grid-area: formulario;
-    justify-self: end;
-    align-self: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    row-gap: 1vh;
-    grid-template-areas: "nameLabel nome" "emailLabel email" "txtAreaLabel txtAreaLabel" "textarea textarea";
-  }
-  html[page=contatos] input[type=text] {
-    grid-area: nome;
-  }
-  html[page=contatos] input[type=email] {
-    grid-area: email;
-  }
-  html[page=contatos] #nameLabel {
-    grid-area: nameLabel;
-  }
-  html[page=contatos] #emailLabel {
-    grid-area: emailLabel;
-  }
-  html[page=contatos] #txtAreaLabel {
-    grid-area: txtAreaLabel;
-  }
-  html[page=contatos] textarea {
-    grid-area: textarea;
-  }
-}
-@media screen and (max-width: 1200px) {
-  html[page=contatos] .container {
-    display: grid;
-    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
-    grid-template-areas: ". . . . . . ." ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 ." ". . . . . . .";
-    grid-template-rows: 0.5fr 1fr 0.8fr;
-  }
-  html[page=contatos] .conteudoCartao {
-    grid-area: conteudo2;
-    display: grid;
-    text-align: center;
-    background-color: rgba(14, 14, 14, 0.938);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 0 30px #858484;
-    max-width: 100%;
-    min-height: 20vh;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 1.5vh;
-    row-gap: 2.5vh;
-    grid-template-areas: "FotoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
-  }
-  html[page=contatos] .FotoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 50%;
-    background-color: white;
-    min-width: 25vh;
-    min-height: 25vh;
-    padding: 5px;
-    grid-area: FotoPerfil;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background: -110px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
-  }
-  html[page=contatos] .textoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 15px;
-    background-color: white;
-    padding: 5px;
-    grid-area: textoPerfil;
-  }
-}
-@media screen and (max-width: 900px) {
-  html[page=contatos] .container {
-    display: grid;
-    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
-    grid-template-areas: ". . . . . . ." ". conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 ." ". . . . . . .";
-    grid-template-rows: 0.1fr 1fr 0.1fr;
-  }
-  html[page=contatos] .conteudoCartao {
-    grid-area: conteudo2;
-    display: grid;
-    text-align: center;
-    background-color: rgba(14, 14, 14, 0.938);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 0 30px #858484;
-    max-width: 100%;
-    min-height: 30vh;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 1fr;
-    column-gap: 1.5vh;
-    row-gap: 2.5vh;
-    grid-template-areas: ". . FotoPerfil FotoPerfil . ." "textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
-  }
-  html[page=contatos] .FotoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 50%;
-    background-color: white;
-    min-width: 30vh;
-    min-height: 30vh;
-    padding: 5px;
-    grid-area: FotoPerfil;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background: -90px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
-  }
-  html[page=contatos] .textoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 15px;
-    background-color: white;
-    padding: 5px;
-    grid-area: textoPerfil;
-  }
-}
-@media screen and (max-width: 640px) {
-  html[page=contatos] .container {
-    display: grid;
-    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
-    grid-template-areas: "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2";
-    grid-template-rows: 1fr;
-  }
-  html[page=contatos] .conteudoCartao {
-    grid-area: conteudo2;
-    display: grid;
-    text-align: center;
-    background-color: rgba(14, 14, 14, 0.938);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 0 20px #858484;
-    max-width: 100%;
-    min-height: 10vh;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 0.8fr 1fr;
-    grid-template-areas: "FotoPerfil FotoPerfil FotoPerfil FotoPerfil FotoPerfil FotoPerfil" "textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil textoPerfil";
-  }
-  html[page=contatos] .FotoPerfil {
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 50%;
-    background-color: white;
-    min-width: 40vh;
-    min-height: 40vh;
-    max-width: 800vh;
-    max-height: 800vh;
-    padding: 5px;
-    grid-area: FotoPerfil;
-    justify-self: center;
-    align-self: center;
-    background: -80px -50px url(/midia/img/sobre/fotoPerfil-md.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-  }
-  html[page=contatos] .textoPerfil {
-    justify-self: center;
-    align-self: center;
-    border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
-    border-radius: 15px;
-    background-color: white;
-    padding: 5px;
-    grid-area: textoPerfil;
-  }
 }
 
 /*****/
