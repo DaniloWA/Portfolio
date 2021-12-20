@@ -184,9 +184,7 @@
         }
         
         body {
-            background: -300px 0 url(/midia/img/fundo/147309.svg);
-            background-color: #202626;
-            
+            background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,56,71));
         }
         .container{
             display: grid;
@@ -201,7 +199,7 @@
             grid-area: conteudo2;
             display: grid;
             text-align: center;
-            background-color: rgb(177, 177, 177);
+            background-color: rgba(0, 0, 0, 0.555);
             border-left:2px solid black ;
             border-right:2px solid black ;
             padding: 15px;
@@ -354,8 +352,7 @@
         }
         
         body {
-            background: -300px 0 url(/midia/img/fundo/147309.svg);
-            background-color: #202626;
+            background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,56,71));
         }
 
         .container{
@@ -371,7 +368,7 @@
             grid-area: conteudo2;
             display: grid;
             text-align: center;
-            background-color: rgb(177, 177, 177);
+            background-color: rgba(0, 0, 0, 0.555);
             border-left:2px solid black ;
             border-right:2px solid black ;
             padding: 15px;
@@ -448,8 +445,7 @@
         }
         
         body {
-            background: -300px 0 url(/midia/img/fundo/147309.svg);
-            background-color: #202626;
+            background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,56,71));
         }
 
         .container{
@@ -465,7 +461,7 @@
             grid-area: conteudo2;
             display: grid;
             text-align: center;
-            background-color: rgb(177, 177, 177);
+            background-color: rgba(0, 0, 0, 0.555);
             border-left:2px solid black ;
             border-right:2px solid black ;
             padding: 15px;
@@ -606,8 +602,7 @@
         }
         
         body {
-            background: -300px 0 url(/midia/img/fundo/147309.svg);
-            background-color: #202626;
+            background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,56,71));
         }
 
         .container{
@@ -623,7 +618,7 @@
             grid-area: conteudo2;
             display: grid;
             text-align: center;
-            background-color: rgb(177, 177, 177);
+            background-color: rgba(0, 0, 0, 0.555);
             border-left:2px solid black ;
             border-right:2px solid black ;
             padding: 15px;

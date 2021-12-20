@@ -1,16 +1,17 @@
 console.log("Confirm CONTATOS")
 
-const myForm = document.querySelector('#my-form');
-const nameInput = document.querySelector('#name');
-const emailInput = document.querySelector('#email');
-const telefoneInput = document.querySelector('#telefone')
-const subimitButton = document.querySelector('#btnEnviar');
-const errorMessage = document.querySelector('.msg');
+export function sobrePage(){
+    const myForm = document.querySelector('#my-form');
+    const nameInput = document.querySelector('#name');
+    const emailInput = document.querySelector('#email');
+    const telefoneInput = document.querySelector('#telefone')
+    const subimitButton = document.querySelector('#btnEnviar');
+    const errorMessage = document.querySelector('.msg');
 
-const items = document.querySelector('.items')
+    const items = document.querySelector('.items')
 
-subimitButton.addEventListener('click', function(e){
-    e.preventDefault()
+    subimitButton.addEventListener('click', function(e){
+        e.preventDefault()
 
     const nameValue = nameInput.value;
     const emailValue = emailInput.value;
@@ -37,4 +38,6 @@ subimitButton.addEventListener('click', function(e){
     emailInput.value = '';
     telefoneInput.value = '';
 })
+}
+
  

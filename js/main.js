@@ -17,7 +17,7 @@ switch(page){
     break;
 
     case "contatos": console.log("Case: " + page);
-    //window.onload = contatos.slide();
+    window.onload = contatos.sobrePage();
     break;    
 
     case "projetos": console.log("Case: " + page); 

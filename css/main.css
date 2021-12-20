@@ -43,11 +43,10 @@ html[tema="dark"]{
     grid-area: conteudo2;
     display: grid;
     text-align: center;
-    background-color: rgba(14, 14, 14, 0.938);
+    background-color: rgba(0, 0, 0, 0.555);
     border: 2px solid black;
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 0 30px #858484;
     max-width: 100%;
     min-height: 30vh;
     grid-template-columns: repeat(6, 1fr);
@@ -57,9 +56,8 @@ html[tema="dark"]{
   }
   html[page=sobre] .FotoPerfil {
     border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
     border-radius: 50%;
-    background-color: white;
+    box-shadow: 0 0 15px black;
     min-width: 30vh;
     min-height: 30vh;
     padding: 5px;
@@ -71,7 +69,7 @@ html[tema="dark"]{
   }
   html[page=sobre] .textoPerfil {
     border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
+    box-shadow: 0 0 15px black;
     border-radius: 15px;
     background-color: white;
     padding: 5px;
@@ -89,11 +87,10 @@ html[tema="dark"]{
     grid-area: conteudo2;
     display: grid;
     text-align: center;
-    background-color: rgba(14, 14, 14, 0.938);
+    background-color: rgba(0, 0, 0, 0.555);
     border: 2px solid black;
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 0 30px #858484;
     max-width: 100%;
     min-height: 20vh;
     grid-template-columns: repeat(6, 1fr);
@@ -103,7 +100,7 @@ html[tema="dark"]{
   }
   html[page=sobre] .FotoPerfil {
     border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
+    box-shadow: 0 0 15px black;
     border-radius: 50%;
     background-color: white;
     min-width: 25vh;
@@ -117,7 +114,7 @@ html[tema="dark"]{
   }
   html[page=sobre] .textoPerfil {
     border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
+    box-shadow: 0 0 15px black;
     border-radius: 15px;
     background-color: white;
     padding: 5px;
@@ -135,11 +132,10 @@ html[tema="dark"]{
     grid-area: conteudo2;
     display: grid;
     text-align: center;
-    background-color: rgba(14, 14, 14, 0.938);
+    background-color: rgba(0, 0, 0, 0.555);
     border: 2px solid black;
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 0 30px #858484;
     max-width: 100%;
     min-height: 30vh;
     grid-template-columns: repeat(6, 1fr);
@@ -150,7 +146,7 @@ html[tema="dark"]{
   }
   html[page=sobre] .FotoPerfil {
     border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
+    box-shadow: 0 0 15px black;
     border-radius: 50%;
     background-color: white;
     min-width: 30vh;
@@ -164,7 +160,7 @@ html[tema="dark"]{
   }
   html[page=sobre] .textoPerfil {
     border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
+    box-shadow: 0 0 15px black;
     border-radius: 15px;
     background-color: white;
     padding: 5px;
@@ -182,11 +178,10 @@ html[tema="dark"]{
     grid-area: conteudo2;
     display: grid;
     text-align: center;
-    background-color: rgba(14, 14, 14, 0.938);
+    background-color: rgba(0, 0, 0, 0.555);
     border: 2px solid black;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 0 20px #858484;
     max-width: 100%;
     min-height: 10vh;
     grid-template-columns: repeat(6, 1fr);
@@ -195,7 +190,7 @@ html[tema="dark"]{
   }
   html[page=sobre] .FotoPerfil {
     border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
+    box-shadow: 0 0 15px black;
     border-radius: 50%;
     background-color: white;
     min-width: 40vh;
@@ -215,7 +210,7 @@ html[tema="dark"]{
     justify-self: center;
     align-self: center;
     border: 2px solid black;
-    box-shadow: 5px 10px 10px black;
+    box-shadow: 0 0 15px black;
     border-radius: 15px;
     background-color: white;
     padding: 5px;
@@ -1148,8 +1143,7 @@ html[slide=foto1] .txtFocusMenu {
     font-family: "Merriweather Sans", sans-serif;
   }
   html[slide=foto1] body {
-    background: -300px 0 url(/midia/img/fundo/147309.svg);
-    background-color: #202626;
+    background-image: linear-gradient(to right, #1493dc, #113847);
   }
   html[slide=foto1] .container {
     display: grid;
@@ -1160,7 +1154,7 @@ html[slide=foto1] .txtFocusMenu {
     grid-area: conteudo2;
     display: grid;
     text-align: center;
-    background-color: #b1b1b1;
+    background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
     padding: 15px;
@@ -1429,8 +1423,7 @@ html[slide=foto2] .txtFocusMenu {
     font-family: "Merriweather Sans", sans-serif;
   }
   html[slide=foto2] body {
-    background: -300px 0 url(/midia/img/fundo/147309.svg);
-    background-color: #202626;
+    background-image: linear-gradient(to right, #1493dc, #113847);
   }
   html[slide=foto2] .container {
     display: grid;
@@ -1441,7 +1434,7 @@ html[slide=foto2] .txtFocusMenu {
     grid-area: conteudo2;
     display: grid;
     text-align: center;
-    background-color: #b1b1b1;
+    background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
     padding: 15px;
@@ -1710,8 +1703,7 @@ html[slide=foto3] .txtFocusMenu {
     font-family: "Merriweather Sans", sans-serif;
   }
   html[slide=foto3] body {
-    background: -300px 0 url(/midia/img/fundo/147309.svg);
-    background-color: #202626;
+    background-image: linear-gradient(to right, #1493dc, #113847);
   }
   html[slide=foto3] .container {
     display: grid;
@@ -1722,7 +1714,7 @@ html[slide=foto3] .txtFocusMenu {
     grid-area: conteudo2;
     display: grid;
     text-align: center;
-    background-color: #b1b1b1;
+    background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
     padding: 15px;
@@ -1810,8 +1802,7 @@ html[slide=foto3] .txtFocusMenu {
   }
 
   body {
-    background: -300px 0 url(/midia/img/fundo/147309.svg);
-    background-color: #202626;
+    background-image: linear-gradient(to right, #1493dc, #113847);
   }
 
   .container {
@@ -1824,7 +1815,7 @@ html[slide=foto3] .txtFocusMenu {
     grid-area: conteudo2;
     display: grid;
     text-align: center;
-    background-color: #b1b1b1;
+    background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
     padding: 15px;
@@ -1918,8 +1909,7 @@ html[slide=foto3] .txtFocusMenu {
   }
 
   body {
-    background: -300px 0 url(/midia/img/fundo/147309.svg);
-    background-color: #202626;
+    background-image: linear-gradient(to right, #1493dc, #113847);
   }
 
   .container {
@@ -1932,7 +1922,7 @@ html[slide=foto3] .txtFocusMenu {
     grid-area: conteudo2;
     display: grid;
     text-align: center;
-    background-color: #b1b1b1;
+    background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
     padding: 15px;
@@ -2090,8 +2080,7 @@ html[slide=foto3] .txtFocusMenu {
   }
 
   body {
-    background: -300px 0 url(/midia/img/fundo/147309.svg);
-    background-color: #202626;
+    background-image: linear-gradient(to right, #1493dc, #113847);
   }
 
   .container {
@@ -2104,7 +2093,7 @@ html[slide=foto3] .txtFocusMenu {
     grid-area: conteudo2;
     display: grid;
     text-align: center;
-    background-color: #b1b1b1;
+    background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
     padding: 15px;
