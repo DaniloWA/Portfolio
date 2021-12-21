@@ -32,6 +32,24 @@ html[tema="dark"]{
   list-style: none;
 }
 
+/*
+    <header class="navBarProj">
+        <nav>
+            <a class="txtNavBar" href="/projetos.html">PROJETOS</a>
+        </nav>
+    </header>
+
+    <main class="containerProj">
+        <div class="linkProjeto"></div>
+        <div class="titulo"></div>
+        <div class="textoMain"></div>
+        <div class="blocoTxtImg"></div>
+        <div class="blocoTxtImg"></div>
+        <div class="blocoTxtImg"></div>
+        <div class="barraLateral"></div>
+    </main>
+
+*/
 @media screen and (min-width: 1201px) {
   html[page=sobre] .container {
     display: grid;
@@ -954,6 +972,10 @@ html[tema="dark"]{
     grid-template-columns: 1fr repeat(5, 1fr) 1fr;
     grid-template-areas: "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2";
   }
+  html[page=projetos] .containerPJ {
+    grid-template-rows: 1fr 2.5fr 1fr;
+    grid-template-areas: ". . . . . . ." "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2" ". . . . . . .";
+  }
   html[page=projetos] .conteudoPJ {
     grid-area: conteudo2;
     display: grid;
@@ -993,7 +1015,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco01 p {
     grid-area: paragrafo;
@@ -1002,27 +1024,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco01 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco01 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco01 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco01 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco02 {
     display: grid;
@@ -1046,7 +1078,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco02 p {
     grid-area: paragrafo;
@@ -1055,27 +1087,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco02 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco02 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco02 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco02 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco03 {
     display: grid;
@@ -1099,7 +1141,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco03 p {
     grid-area: paragrafo;
@@ -1108,27 +1150,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco03 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco03 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco03 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco03 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco04 {
     display: grid;
@@ -1152,7 +1204,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco04 p {
     grid-area: paragrafo;
@@ -1161,27 +1213,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco04 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco04 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco04 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco04 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco05 {
     display: grid;
@@ -1205,7 +1267,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco05 p {
     grid-area: paragrafo;
@@ -1214,27 +1276,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco05 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco05 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco05 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco05 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco06 {
     display: grid;
@@ -1258,7 +1330,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco06 p {
     grid-area: paragrafo;
@@ -1267,27 +1339,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco06 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco06 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco06 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco06 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1346,7 +1428,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco01 p {
     grid-area: paragrafo;
@@ -1355,27 +1437,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco01 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco01 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco01 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco01 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco02 {
     display: grid;
@@ -1399,7 +1491,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco02 p {
     grid-area: paragrafo;
@@ -1408,27 +1500,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco02 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco02 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco02 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco02 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco03 {
     display: grid;
@@ -1452,7 +1554,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco03 p {
     grid-area: paragrafo;
@@ -1461,27 +1563,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco03 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco03 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco03 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco03 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco04 {
     display: grid;
@@ -1505,7 +1617,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco04 p {
     grid-area: paragrafo;
@@ -1514,27 +1626,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco04 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco04 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco04 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco04 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco05 {
     display: grid;
@@ -1558,7 +1680,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco05 p {
     grid-area: paragrafo;
@@ -1567,27 +1689,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco05 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco05 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco05 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco05 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco06 {
     display: grid;
@@ -1611,7 +1743,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco06 p {
     grid-area: paragrafo;
@@ -1620,27 +1752,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco06 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco06 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco06 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco06 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .conteudoPJ {
     grid-template-columns: repeat(3, 1fr);
@@ -1707,7 +1849,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco01 p {
     grid-area: paragrafo;
@@ -1716,27 +1858,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco01 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco01 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco01 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco01 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco02 {
     display: grid;
@@ -1760,7 +1912,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco02 p {
     grid-area: paragrafo;
@@ -1769,27 +1921,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco02 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco02 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco02 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco02 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco03 {
     display: grid;
@@ -1813,7 +1975,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco03 p {
     grid-area: paragrafo;
@@ -1822,27 +1984,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco03 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco03 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco03 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco03 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco04 {
     display: grid;
@@ -1866,7 +2038,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco04 p {
     grid-area: paragrafo;
@@ -1875,27 +2047,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco04 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco04 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco04 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco04 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco05 {
     display: grid;
@@ -1919,7 +2101,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco05 p {
     grid-area: paragrafo;
@@ -1928,27 +2110,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco05 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco05 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco05 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco05 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco06 {
     display: grid;
@@ -1972,7 +2164,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco06 p {
     grid-area: paragrafo;
@@ -1981,27 +2173,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco06 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco06 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco06 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco06 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .sm {
     display: inline;
@@ -2128,7 +2330,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco01 p {
     grid-area: paragrafo;
@@ -2137,27 +2339,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco01 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco01 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco01 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco01 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco02 {
     display: grid;
@@ -2181,7 +2393,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco02 p {
     grid-area: paragrafo;
@@ -2190,27 +2402,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco02 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco02 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco02 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco02 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco03 {
     display: grid;
@@ -2234,7 +2456,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco03 p {
     grid-area: paragrafo;
@@ -2243,27 +2465,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco03 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco03 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco03 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco03 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco04 {
     display: grid;
@@ -2287,7 +2519,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco04 p {
     grid-area: paragrafo;
@@ -2296,27 +2528,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco04 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco04 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco04 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco04 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco05 {
     display: grid;
@@ -2340,7 +2582,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco05 p {
     grid-area: paragrafo;
@@ -2349,27 +2591,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco05 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco05 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco05 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco05 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .bloco06 {
     display: grid;
@@ -2393,7 +2645,7 @@ html[tema="dark"]{
     min-height: 2px;
     max-height: 2px;
     grid-area: hr;
-    background-color: dodgerblue;
+    background-color: black;
   }
   html[page=projetos] .bloco06 p {
     grid-area: paragrafo;
@@ -2402,27 +2654,37 @@ html[tema="dark"]{
     grid-area: img;
     width: 100%;
     height: 25vh;
-    border: 2px solid dodgerblue;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
     border-radius: 10%;
     justify-self: center;
     align-self: center;
   }
   html[page=projetos] .bloco06 button {
     grid-area: btn;
-    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    background-color: rgba(158, 158, 158, 0.705);
     border: none;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     border-radius: 15px;
+    border: 1px solid black;
     cursor: pointer;
+    color: black;
+    transition: 500ms;
+    box-shadow: inset 0 0 5px black;
   }
   html[page=projetos] .bloco06 button:hover {
-    background-image: linear-gradient(to right, #0050ac, #5013c3);
-  }
-  html[page=projetos] .bloco06 button a {
+    transition: 200ms;
+    background-color: #2c2c2c;
     color: white;
-    text-decoration: none;
+  }
+  html[page=projetos] .bloco06 button:active {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid white;
+    transition: 0ms;
+    background-color: white;
+    counter-reset: white;
   }
   html[page=projetos] .sm {
     display: inline;
@@ -2495,13 +2757,254 @@ html[tema="dark"]{
   }
 }
 
+html[page=projetoDefault] header.navBarProj nav {
+  background-color: #bbbaba;
+  display: grid;
+  min-width: 100%;
+  min-height: 6vh;
+  max-height: 20vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: bold;
+  grid-template-areas: " . navBarProj . ";
+}
+html[page=projetoDefault] header.navBarProj nav ul {
+  grid-area: navBarProj;
+  justify-self: center;
+  align-self: center;
+  display: inline-block;
+  list-style: none;
+}
+html[page=projetoDefault] header.navBarProj nav ul li {
+  display: inline-block;
+}
+html[page=projetoDefault] header.navBarProj nav ul li a.txtNavBar {
+  text-decoration: none;
+  padding: 1.5vh;
+}
+html[page=projetoDefault] header.navBarProj nav ul li a.txtNavBar:link {
+  color: black;
+}
+html[page=projetoDefault] header.navBarProj nav ul li a.txtNavBar:visited {
+  color: black;
+}
+html[page=projetoDefault] header.navBarProj nav ul li a.txtNavBar:hover {
+  transition: 300ms;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 10px #3b3b3b;
+}
+html[page=projetoDefault] header.navBarProj nav ul li a.txtNavBar:active {
+  transition: 0ms;
+  border-radius: 50%;
+  background-color: #303030;
+}
+html[page=projetoDefault] .containerProj {
+  box-sizing: border-box;
+  display: grid;
+  background-color: white;
+  width: 100%;
+  grid-template-columns: 3fr 3fr 3fr minmax(50px, 50px);
+  grid-template-rows: 0.2fr repeat(4, 4fr);
+  row-gap: 1vh;
+  grid-template-areas: "linkProjeto titulo . barraLateral" "textoMain textoMain textoMain barraLateral" "blocoTxtImg1 blocoTxtImg1 blocoTxtImg1 barraLateral" "blocoTxtImg2 blocoTxtImg2 blocoTxtImg2 barraLateral" "blocoTxtImg3 blocoTxtImg3 blocoTxtImg3 barraLateral";
+}
+html[page=projetoDefault] .containerProj .linkProjeto {
+  box-sizing: border-box;
+  grid-area: linkProjeto;
+  display: grid;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  border-radius: 15px;
+  background-color: #535353;
+  grid-template-areas: "link";
+}
+html[page=projetoDefault] .containerProj .linkProjeto a {
+  grid-area: link;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid black;
+  box-shadow: 0 0 10px black;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: white;
+}
+html[page=projetoDefault] .containerProj .linkProjeto a:hover {
+  background-color: black;
+  color: white;
+}
+html[page=projetoDefault] .containerProj .titulo {
+  box-sizing: border-box;
+  grid-area: titulo;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+}
+html[page=projetoDefault] .containerProj .titulo h1 {
+  color: black;
+  font-size: 3em;
+}
+html[page=projetoDefault] .containerProj .titulo p {
+  color: #353535;
+}
+html[page=projetoDefault] .containerProj .textoMain {
+  box-sizing: border-box;
+  padding: 2vh;
+  font-size: 1.4em;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(175, 175, 175, 0.219);
+  grid-area: textoMain;
+}
+html[page=projetoDefault] .containerProj .blocoTxtImg1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  box-sizing: border-box;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(175, 175, 175, 0.219);
+  grid-area: blocoTxtImg1;
+  grid-template-areas: "img txt";
+}
+html[page=projetoDefault] .containerProj .blocoTxtImg1 img {
+  margin: 5px;
+  border: 3px solid black;
+  box-sizing: border-box;
+  justify-self: center;
+  align-self: center;
+  width: 97%;
+  min-height: 20vh;
+  max-height: 40vh;
+  grid-area: img;
+}
+html[page=projetoDefault] .containerProj .blocoTxtImg1 p {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  grid-area: txt;
+  font-size: 1.2em;
+}
+html[page=projetoDefault] .containerProj .blocoTxtImg2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  box-sizing: border-box;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(175, 175, 175, 0.219);
+  grid-area: blocoTxtImg2;
+  grid-template-areas: "img txt";
+}
+html[page=projetoDefault] .containerProj .blocoTxtImg2 img {
+  margin: 5px;
+  border: 3px solid black;
+  box-sizing: border-box;
+  justify-self: center;
+  align-self: center;
+  width: 97%;
+  min-height: 20vh;
+  max-height: 40vh;
+  grid-area: img;
+}
+html[page=projetoDefault] .containerProj .blocoTxtImg2 p {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  grid-area: txt;
+  font-size: 1.2em;
+}
+html[page=projetoDefault] .containerProj .blocoTxtImg3 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  box-sizing: border-box;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(175, 175, 175, 0.219);
+  grid-area: blocoTxtImg3;
+  grid-template-areas: "img txt";
+}
+html[page=projetoDefault] .containerProj .blocoTxtImg3 img {
+  margin: 5px;
+  border: 3px solid black;
+  box-sizing: border-box;
+  justify-self: center;
+  align-self: center;
+  width: 97%;
+  min-height: 20vh;
+  max-height: 40vh;
+  grid-area: img;
+}
+html[page=projetoDefault] .containerProj .blocoTxtImg3 p {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  grid-area: txt;
+  font-size: 1.2em;
+}
+html[page=projetoDefault] .containerProj .barraLateral {
+  box-sizing: border-box;
+  justify-self: end;
+  align-self: center;
+  margin-left: 5px;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  background-color: #313131;
+  grid-area: barraLateral;
+}
+html[page=projetoDefault] .containerProj .barraLateral .lateralAb {
+  box-sizing: border-box;
+  display: grid;
+  min-width: 50px;
+  background-color: #8b8b8b;
+  position: fixed;
+  right: 0;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+html[page=projetoDefault] .containerProj .barraLateral .lateralAb img {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+html[page=projetoDefault] #footerS {
+  box-sizing: border-box;
+  padding-top: 15px;
+  width: 100%;
+  min-height: 5vh;
+  font-size: 15px;
+  font-weight: bold;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+
 html[slide=foto1] footer {
   background-color: transparent;
   margin-top: 2vh;
   bottom: 0px;
   min-width: 100%;
   min-height: 5vh;
-  max-height: 10vh;
+  max-height: 5vh;
   font-weight: bold;
   text-align: center;
   color: white;
@@ -2782,7 +3285,7 @@ html[slide=foto2] footer {
   bottom: 0px;
   min-width: 100%;
   min-height: 5vh;
-  max-height: 10vh;
+  max-height: 5vh;
   font-weight: bold;
   text-align: center;
   color: white;
@@ -3063,7 +3566,7 @@ html[slide=foto3] footer {
   bottom: 0px;
   min-width: 100%;
   min-height: 5vh;
-  max-height: 10vh;
+  max-height: 5vh;
   font-weight: bold;
   text-align: center;
   color: white;
@@ -3451,19 +3954,6 @@ html[slide=foto3] .txtFocusMenu {
   }
 }
 @media screen and (max-width: 760px) {
-  /*
-  .slide{
-      .foto01{
-          background-image: url("/midia/img/slide/bloco_Notas-SM.png");
-      }
-      .foto02{
-          background-image: url("/midia/img/slide/calculadora-SM.png");
-      }
-      .foto03{
-          background-image: url("/midia/img/slide/key_projeto-SM.png");
-      }
-  }  
-  */
   * {
     padding: 0;
     margin: 0;

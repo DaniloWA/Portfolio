@@ -3,6 +3,7 @@
 @use "partials/contatos" as ct;
 @use "partials/projetos" as pj;
 @use "partials/classList" as cl;
+@use "partials/defaultProjetos" as dProj;
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 
@@ -18,6 +19,11 @@ html[page="contatos"]{
 html[page="projetos"]{   
     @include pj.projetos();
 } 
+
+html[page="projetoDefault"]{   
+    @include dProj.projetoDefault();
+} 
+
 
 html[slide="foto1"]{   
     @include bc.container("foto1");

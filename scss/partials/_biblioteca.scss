@@ -5,7 +5,7 @@
         bottom: 0px;
         min-width: 100%;
         min-height: 5vh;
-        max-height: 10vh;
+        max-height: 5vh;
         font-weight: bold;
         text-align: center;
         color: white;
@@ -423,20 +423,7 @@
 }
 
 @mixin screen02 {
-    @media screen and (max-width: 760px) {
-        /*
-        .slide{
-            .foto01{
-                background-image: url("/midia/img/slide/bloco_Notas-SM.png");
-            }
-            .foto02{
-                background-image: url("/midia/img/slide/calculadora-SM.png");
-            }
-            .foto03{
-                background-image: url("/midia/img/slide/key_projeto-SM.png");
-            }
-        }  
-        */        
+    @media screen and (max-width: 760px) {      
         *{
             padding: 0;
             margin: 0;
