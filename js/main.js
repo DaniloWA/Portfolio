@@ -2,6 +2,7 @@ import * as index from "./index.js"
 import * as sobre from "./sobre.js"
 import * as contatos from "./contatos.js"
 import * as projetos from "./projetos.js"
+import * as menuDrop from "./menuDropdow.js"
 
 let page = document.getElementsByTagName('html')[0].getAttribute('page');
 
