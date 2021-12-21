@@ -1,6 +1,7 @@
 console.log("Confirm MenuDropDow") 
 
 const sb = document.querySelector('#menu')
+
 sb.onchange = (event) => {
     event.preventDefault();
     switch(sb.value){
@@ -9,4 +10,5 @@ sb.onchange = (event) => {
         case "Contatos": window.location ='contatos.html'; break;
         case "Projetos": window.location ='projetos.html'; break;
     }
-};
+}
+

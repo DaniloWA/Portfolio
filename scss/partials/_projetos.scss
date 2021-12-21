@@ -1,0 +1,280 @@
+@mixin blocoPJ {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr  0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: 
+    'titulo'
+    'hr'
+    'paragrafo'
+    'img'
+    'btn'
+    ;
+    h1{
+        font-weight: bold;
+        grid-area: titulo;
+    }
+    hr{
+        width: 100%;
+        min-height: 2px;
+        max-height: 2px;
+        grid-area: hr;
+        background-color: dodgerblue;
+    }
+    p{
+        grid-area: paragrafo;
+    }
+    img{
+        grid-area: img;
+        width: 100%;
+        height: 25vh;
+        border: 2px solid dodgerblue;
+        border-radius: 10%;
+        justify-self: center;
+        align-self: center;
+        &:hover{
+            
+        }
+    }
+    button{
+        grid-area: btn;
+        background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+        border: none;
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 15px;
+        cursor: pointer;
+        &:hover{
+            background-image: linear-gradient(to right, rgb(0,80,172), rgb(80,19,195));
+           }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+@mixin blocosPJ {
+    .bloco01{
+        @include blocoPJ();
+        grid-area:bloco01 ;
+    }
+    .bloco02{
+        @include blocoPJ();
+        grid-area:bloco02 ;
+    }
+    .bloco03{
+        @include blocoPJ();
+        grid-area:bloco03 ;
+    }
+    .bloco04{
+        @include blocoPJ();
+        grid-area:bloco04 ;
+    }
+    .bloco05{
+        @include blocoPJ();
+        grid-area:bloco05 ;
+    }
+    .bloco06{
+        @include blocoPJ();
+        grid-area:bloco06 ;
+    }
+}
+@mixin containerPJ {
+    .containerPJ{
+        display: grid;
+        grid-template-columns: 1fr repeat(5,1fr) 1fr;
+        grid-template-areas: 
+        'conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2'
+        ;
+    }
+}
+@mixin conteudoPJ {
+    .conteudoPJ{
+        grid-area: conteudo2;
+        display: grid;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.555);
+        border-left:2px solid black;
+        border-right:2px solid black;
+        border-bottom: 2px solid black;
+        padding: 30px 15px 30px 15px;
+        box-shadow: 0 10px 15px black ;
+        max-width: 100%;
+        min-height:30vh;
+        grid-template-columns:repeat(6,1fr);
+        column-gap: 1.5vh;
+        row-gap: 2.5vh;
+        grid-template-areas: 
+        'bloco01 bloco02 bloco03 bloco04 bloco05 bloco06'
+        ;
+    }
+}
+@mixin configInicial {
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+    
+    body {
+        background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,56,71));
+    }
+}
+@mixin menuDropDown {
+    .sm{
+        display: inline;
+        nav{
+            background-color: #ffffff;
+            display: grid;
+            min-width: 100%;
+            min-height: 5vh;
+            grid-template-columns: 0.3fr repeat(5, 2fr) 0.3fr;
+            font-weight: bold;
+            grid-template-areas:  
+            'logo txtLogo txtLogo select txtTema txtTema  tema'
+            ;
+    
+            .txtLogo{
+                justify-self: start;
+                align-self: center;
+                grid-area: txtLogo;
+            }
+            .txtTema{
+                justify-self: end;
+                align-self: center;
+                grid-area: txtTema;
+            }
+    
+            > a{
+                text-decoration: none;
+                align-self: center;
+                grid-area: logo;
+            }
+            .imgLogo{
+                min-height: 1vh; 
+                max-height: 4vh; 
+            }
+            .imgTema{
+                min-height: 1vh; 
+                max-height: 4vh; 
+            }
+            .logo{
+                justify-self: center;
+                align-self: center;
+            }
+            .toggle{
+                grid-area: tema;
+                justify-self: center;
+                align-self: center;
+            }
+    
+            #menu{
+                justify-self: center;
+                align-self: center;
+                grid-area: select;
+                outline: 0;
+                border-radius: 10px;
+                background: transparent;
+                border: none;
+                text-align: center;
+                &:hover{
+                    background-color: #ffffff; 
+                }
+                option{  
+                    background-color: #ffffff;
+                    &:hover{
+                        background-color: #ffffff; 
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin smOFF {
+    .sm{
+        display: none;
+    }
+}
+@mixin lgOFF{
+    .lg-xl{
+        display: none;
+    }
+}
+@mixin projetos {
+    @media screen and (min-width:1201px) {
+        @include smOFF;
+        @include configInicial;
+        @include containerPJ;
+        @include conteudoPJ;
+        @include blocosPJ;
+    }
+    @media screen and (max-width: 1200px) {
+        @include smOFF;
+        @include configInicial;
+        @include containerPJ;
+        @include conteudoPJ;
+        @include blocosPJ;
+
+        .conteudoPJ{
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            'bloco01 bloco02 bloco03'
+            'bloco04 bloco05 bloco06'
+            ;
+        }
+        
+        header.lg-xl{
+            nav{
+                max-height: 10vh;
+            }
+        }
+        
+    }
+    @media screen and (max-width: 760px) {
+        @include lgOFF;
+        @include configInicial;
+        @include containerPJ;
+        @include conteudoPJ;
+        @include blocosPJ;
+        @include menuDropDown;
+
+        .conteudoPJ{
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            'bloco01 bloco02'
+            'bloco03 bloco04'
+            'bloco05 bloco06'
+            ;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        @include lgOFF;
+        @include configInicial;
+        @include containerPJ;
+        @include conteudoPJ;
+        @include blocosPJ;
+        @include menuDropDown;
+
+        .conteudoPJ{
+            border: none;
+            grid-template-columns:1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            'bloco01'
+            'bloco02'
+            'bloco03'
+            'bloco04'
+            'bloco05'
+            'bloco06'
+            ;
+        }  
+    }
+}

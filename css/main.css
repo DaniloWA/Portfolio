@@ -372,7 +372,7 @@ html[tema="dark"]{
     min-height: 20vh;
     padding: 10px;
     letter-spacing: 2px;
-    background-color: darkgray;
+    background-color: white;
     font-weight: bold;
     margin-top: 5px;
     outline: 0;
@@ -462,7 +462,7 @@ html[tema="dark"]{
     min-height: 20vh;
     padding: 10px;
     letter-spacing: 2px;
-    background-color: darkgray;
+    background-color: white;
     font-weight: bold;
     margin-top: 5px;
     outline: 0;
@@ -552,7 +552,7 @@ html[tema="dark"]{
     min-height: 20vh;
     padding: 10px;
     letter-spacing: 2px;
-    background-color: darkgray;
+    background-color: white;
     font-weight: bold;
     margin-top: 5px;
     outline: 0;
@@ -642,7 +642,7 @@ html[tema="dark"]{
     min-height: 20vh;
     padding: 10px;
     letter-spacing: 2px;
-    background-color: darkgray;
+    background-color: white;
     font-weight: bold;
     margin-top: 5px;
     outline: 0;
@@ -731,7 +731,7 @@ html[tema="dark"]{
     min-height: 20vh;
     padding: 10px;
     letter-spacing: 2px;
-    background-color: darkgray;
+    background-color: white;
     font-weight: bold;
     margin-top: 5px;
     outline: 0;
@@ -820,7 +820,7 @@ html[tema="dark"]{
     min-height: 20vh;
     padding: 10px;
     letter-spacing: 2px;
-    background-color: darkgray;
+    background-color: white;
     font-weight: bold;
     margin-top: 5px;
     outline: 0;
@@ -910,7 +910,7 @@ html[tema="dark"]{
     min-height: 20vh;
     padding: 10px;
     letter-spacing: 2px;
-    background-color: darkgray;
+    background-color: white;
     font-weight: bold;
     margin-top: 5px;
     outline: 0;
@@ -934,6 +934,1564 @@ html[tema="dark"]{
   html[page=contatos] footer {
     position: absolute;
     top: 600px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  html[page=projetos] .sm {
+    display: none;
+  }
+  html[page=projetos] * {
+    padding: 0;
+    margin: 0;
+    font-family: "Merriweather Sans", sans-serif;
+  }
+  html[page=projetos] body {
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=projetos] .containerPJ {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2";
+  }
+  html[page=projetos] .conteudoPJ {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.555);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 30px 15px 30px 15px;
+    box-shadow: 0 10px 15px black;
+    max-width: 100%;
+    min-height: 30vh;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.5vh;
+    row-gap: 2.5vh;
+    grid-template-areas: "bloco01 bloco02 bloco03 bloco04 bloco05 bloco06";
+  }
+  html[page=projetos] .bloco01 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco01;
+  }
+  html[page=projetos] .bloco01 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco01 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco01 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco01 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco01 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco01 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco01 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco02 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco02;
+  }
+  html[page=projetos] .bloco02 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco02 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco02 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco02 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco02 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco02 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco02 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco03 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco03;
+  }
+  html[page=projetos] .bloco03 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco03 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco03 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco03 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco03 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco03 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco03 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco04 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco04;
+  }
+  html[page=projetos] .bloco04 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco04 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco04 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco04 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco04 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco04 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco04 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco05 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco05;
+  }
+  html[page=projetos] .bloco05 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco05 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco05 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco05 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco05 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco05 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco05 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco06 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco06;
+  }
+  html[page=projetos] .bloco06 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco06 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco06 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco06 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco06 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco06 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco06 button a {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html[page=projetos] .sm {
+    display: none;
+  }
+  html[page=projetos] * {
+    padding: 0;
+    margin: 0;
+    font-family: "Merriweather Sans", sans-serif;
+  }
+  html[page=projetos] body {
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=projetos] .containerPJ {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2";
+  }
+  html[page=projetos] .conteudoPJ {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.555);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 30px 15px 30px 15px;
+    box-shadow: 0 10px 15px black;
+    max-width: 100%;
+    min-height: 30vh;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.5vh;
+    row-gap: 2.5vh;
+    grid-template-areas: "bloco01 bloco02 bloco03 bloco04 bloco05 bloco06";
+  }
+  html[page=projetos] .bloco01 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco01;
+  }
+  html[page=projetos] .bloco01 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco01 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco01 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco01 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco01 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco01 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco01 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco02 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco02;
+  }
+  html[page=projetos] .bloco02 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco02 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco02 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco02 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco02 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco02 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco02 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco03 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco03;
+  }
+  html[page=projetos] .bloco03 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco03 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco03 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco03 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco03 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco03 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco03 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco04 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco04;
+  }
+  html[page=projetos] .bloco04 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco04 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco04 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco04 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco04 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco04 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco04 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco05 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco05;
+  }
+  html[page=projetos] .bloco05 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco05 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco05 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco05 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco05 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco05 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco05 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco06 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco06;
+  }
+  html[page=projetos] .bloco06 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco06 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco06 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco06 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco06 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco06 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco06 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .conteudoPJ {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bloco01 bloco02 bloco03" "bloco04 bloco05 bloco06";
+  }
+  html[page=projetos] header.lg-xl nav {
+    max-height: 10vh;
+  }
+}
+@media screen and (max-width: 760px) {
+  html[page=projetos] .lg-xl {
+    display: none;
+  }
+  html[page=projetos] * {
+    padding: 0;
+    margin: 0;
+    font-family: "Merriweather Sans", sans-serif;
+  }
+  html[page=projetos] body {
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=projetos] .containerPJ {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2";
+  }
+  html[page=projetos] .conteudoPJ {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.555);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 30px 15px 30px 15px;
+    box-shadow: 0 10px 15px black;
+    max-width: 100%;
+    min-height: 30vh;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.5vh;
+    row-gap: 2.5vh;
+    grid-template-areas: "bloco01 bloco02 bloco03 bloco04 bloco05 bloco06";
+  }
+  html[page=projetos] .bloco01 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco01;
+  }
+  html[page=projetos] .bloco01 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco01 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco01 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco01 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco01 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco01 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco01 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco02 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco02;
+  }
+  html[page=projetos] .bloco02 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco02 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco02 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco02 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco02 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco02 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco02 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco03 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco03;
+  }
+  html[page=projetos] .bloco03 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco03 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco03 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco03 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco03 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco03 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco03 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco04 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco04;
+  }
+  html[page=projetos] .bloco04 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco04 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco04 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco04 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco04 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco04 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco04 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco05 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco05;
+  }
+  html[page=projetos] .bloco05 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco05 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco05 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco05 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco05 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco05 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco05 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco06 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco06;
+  }
+  html[page=projetos] .bloco06 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco06 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco06 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco06 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco06 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco06 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco06 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .sm {
+    display: inline;
+  }
+  html[page=projetos] .sm nav {
+    background-color: #ffffff;
+    display: grid;
+    min-width: 100%;
+    min-height: 5vh;
+    grid-template-columns: 0.3fr repeat(5, 2fr) 0.3fr;
+    font-weight: bold;
+    grid-template-areas: "logo txtLogo txtLogo select txtTema txtTema  tema";
+  }
+  html[page=projetos] .sm nav .txtLogo {
+    justify-self: start;
+    align-self: center;
+    grid-area: txtLogo;
+  }
+  html[page=projetos] .sm nav .txtTema {
+    justify-self: end;
+    align-self: center;
+    grid-area: txtTema;
+  }
+  html[page=projetos] .sm nav > a {
+    text-decoration: none;
+    align-self: center;
+    grid-area: logo;
+  }
+  html[page=projetos] .sm nav .imgLogo {
+    min-height: 1vh;
+    max-height: 4vh;
+  }
+  html[page=projetos] .sm nav .imgTema {
+    min-height: 1vh;
+    max-height: 4vh;
+  }
+  html[page=projetos] .sm nav .logo {
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .sm nav .toggle {
+    grid-area: tema;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .sm nav #menu {
+    justify-self: center;
+    align-self: center;
+    grid-area: select;
+    outline: 0;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    text-align: center;
+  }
+  html[page=projetos] .sm nav #menu:hover {
+    background-color: #ffffff;
+  }
+  html[page=projetos] .sm nav #menu option {
+    background-color: #ffffff;
+  }
+  html[page=projetos] .sm nav #menu option:hover {
+    background-color: #ffffff;
+  }
+  html[page=projetos] .conteudoPJ {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "bloco01 bloco02" "bloco03 bloco04" "bloco05 bloco06";
+  }
+}
+@media screen and (max-width: 640px) {
+  html[page=projetos] .lg-xl {
+    display: none;
+  }
+  html[page=projetos] * {
+    padding: 0;
+    margin: 0;
+    font-family: "Merriweather Sans", sans-serif;
+  }
+  html[page=projetos] body {
+    background-image: linear-gradient(to right, #1493dc, #113847);
+  }
+  html[page=projetos] .containerPJ {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-areas: "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2";
+  }
+  html[page=projetos] .conteudoPJ {
+    grid-area: conteudo2;
+    display: grid;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.555);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 30px 15px 30px 15px;
+    box-shadow: 0 10px 15px black;
+    max-width: 100%;
+    min-height: 30vh;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.5vh;
+    row-gap: 2.5vh;
+    grid-template-areas: "bloco01 bloco02 bloco03 bloco04 bloco05 bloco06";
+  }
+  html[page=projetos] .bloco01 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco01;
+  }
+  html[page=projetos] .bloco01 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco01 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco01 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco01 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco01 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco01 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco01 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco02 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco02;
+  }
+  html[page=projetos] .bloco02 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco02 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco02 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco02 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco02 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco02 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco02 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco03 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco03;
+  }
+  html[page=projetos] .bloco03 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco03 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco03 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco03 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco03 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco03 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco03 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco04 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco04;
+  }
+  html[page=projetos] .bloco04 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco04 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco04 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco04 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco04 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco04 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco04 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco05 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco05;
+  }
+  html[page=projetos] .bloco05 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco05 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco05 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco05 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco05 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco05 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco05 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .bloco06 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 4fr 0.2fr;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 15px;
+    row-gap: 0.5vh;
+    background-color: white;
+    padding: 5px;
+    grid-template-areas: "titulo" "hr" "paragrafo" "img" "btn";
+    grid-area: bloco06;
+  }
+  html[page=projetos] .bloco06 h1 {
+    font-weight: bold;
+    grid-area: titulo;
+  }
+  html[page=projetos] .bloco06 hr {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    grid-area: hr;
+    background-color: dodgerblue;
+  }
+  html[page=projetos] .bloco06 p {
+    grid-area: paragrafo;
+  }
+  html[page=projetos] .bloco06 img {
+    grid-area: img;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid dodgerblue;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .bloco06 button {
+    grid-area: btn;
+    background-image: linear-gradient(to right, #005cc5, #5a14dc);
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  html[page=projetos] .bloco06 button:hover {
+    background-image: linear-gradient(to right, #0050ac, #5013c3);
+  }
+  html[page=projetos] .bloco06 button a {
+    color: white;
+    text-decoration: none;
+  }
+  html[page=projetos] .sm {
+    display: inline;
+  }
+  html[page=projetos] .sm nav {
+    background-color: #ffffff;
+    display: grid;
+    min-width: 100%;
+    min-height: 5vh;
+    grid-template-columns: 0.3fr repeat(5, 2fr) 0.3fr;
+    font-weight: bold;
+    grid-template-areas: "logo txtLogo txtLogo select txtTema txtTema  tema";
+  }
+  html[page=projetos] .sm nav .txtLogo {
+    justify-self: start;
+    align-self: center;
+    grid-area: txtLogo;
+  }
+  html[page=projetos] .sm nav .txtTema {
+    justify-self: end;
+    align-self: center;
+    grid-area: txtTema;
+  }
+  html[page=projetos] .sm nav > a {
+    text-decoration: none;
+    align-self: center;
+    grid-area: logo;
+  }
+  html[page=projetos] .sm nav .imgLogo {
+    min-height: 1vh;
+    max-height: 4vh;
+  }
+  html[page=projetos] .sm nav .imgTema {
+    min-height: 1vh;
+    max-height: 4vh;
+  }
+  html[page=projetos] .sm nav .logo {
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .sm nav .toggle {
+    grid-area: tema;
+    justify-self: center;
+    align-self: center;
+  }
+  html[page=projetos] .sm nav #menu {
+    justify-self: center;
+    align-self: center;
+    grid-area: select;
+    outline: 0;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    text-align: center;
+  }
+  html[page=projetos] .sm nav #menu:hover {
+    background-color: #ffffff;
+  }
+  html[page=projetos] .sm nav #menu option {
+    background-color: #ffffff;
+  }
+  html[page=projetos] .sm nav #menu option:hover {
+    background-color: #ffffff;
+  }
+  html[page=projetos] .conteudoPJ {
+    border: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "bloco01" "bloco02" "bloco03" "bloco04" "bloco05" "bloco06";
   }
 }
 
@@ -1157,8 +2715,9 @@ html[slide=foto1] .txtFocusMenu {
     background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
-    padding: 15px;
-    padding-top: 30px;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 15px 15px;
+    padding: 30px 15px 30px 15px;
     box-shadow: 0 10px 15px black;
     max-width: 100%;
     min-height: 30vh;
@@ -1437,8 +2996,9 @@ html[slide=foto2] .txtFocusMenu {
     background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
-    padding: 15px;
-    padding-top: 30px;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 15px 15px;
+    padding: 30px 15px 30px 15px;
     box-shadow: 0 10px 15px black;
     max-width: 100%;
     min-height: 30vh;
@@ -1717,8 +3277,9 @@ html[slide=foto3] .txtFocusMenu {
     background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
-    padding: 15px;
-    padding-top: 30px;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 15px 15px;
+    padding: 30px 15px 30px 15px;
     box-shadow: 0 10px 15px black;
     max-width: 100%;
     min-height: 30vh;
@@ -1818,8 +3379,9 @@ html[slide=foto3] .txtFocusMenu {
     background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
-    padding: 15px;
-    padding-top: 30px;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 15px 15px;
+    padding: 30px 15px 30px 15px;
     box-shadow: 0 10px 15px black;
     max-width: 100%;
     min-height: 30vh;
@@ -1925,8 +3487,9 @@ html[slide=foto3] .txtFocusMenu {
     background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
-    padding: 15px;
-    padding-top: 30px;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 15px 15px;
+    padding: 30px 15px 30px 15px;
     box-shadow: 0 10px 15px black;
     max-width: 100%;
     min-height: 30vh;
@@ -2096,8 +3659,9 @@ html[slide=foto3] .txtFocusMenu {
     background-color: rgba(0, 0, 0, 0.555);
     border-left: 2px solid black;
     border-right: 2px solid black;
-    padding: 15px;
-    padding-top: 30px;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 15px 15px;
+    padding: 30px 15px 30px 15px;
     box-shadow: 0 10px 15px black;
     max-width: 100%;
     min-height: 30vh;

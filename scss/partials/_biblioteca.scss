@@ -200,10 +200,11 @@
             display: grid;
             text-align: center;
             background-color: rgba(0, 0, 0, 0.555);
-            border-left:2px solid black ;
-            border-right:2px solid black ;
-            padding: 15px;
-            padding-top: 30px;
+            border-left:2px solid black;
+            border-right:2px solid black;
+            border-bottom: 2px solid black;
+            border-radius:0 0 15px 15px;
+            padding: 30px 15px 30px 15px;
             box-shadow: 0 10px 15px black ;
             max-width: 100%;
             min-height:30vh;
@@ -369,10 +370,11 @@
             display: grid;
             text-align: center;
             background-color: rgba(0, 0, 0, 0.555);
-            border-left:2px solid black ;
-            border-right:2px solid black ;
-            padding: 15px;
-            padding-top: 30px;
+            border-left:2px solid black;
+            border-right:2px solid black;
+            border-bottom: 2px solid black;
+            border-radius:0 0 15px 15px;
+            padding: 30px 15px 30px 15px;
             box-shadow: 0 10px 15px black ;
             max-width: 100%;
             min-height:30vh;
@@ -416,10 +418,7 @@
                 max-height: 10vh;
             }
         }
-        
     }
-
-
     
 }
 
@@ -462,10 +461,11 @@
             display: grid;
             text-align: center;
             background-color: rgba(0, 0, 0, 0.555);
-            border-left:2px solid black ;
-            border-right:2px solid black ;
-            padding: 15px;
-            padding-top: 30px;
+            border-left:2px solid black;
+            border-right:2px solid black;
+            border-bottom: 2px solid black;
+            border-radius:0 0 15px 15px;
+            padding: 30px 15px 30px 15px;
             box-shadow: 0 10px 15px black ;
             max-width: 100%;
             min-height:30vh;
@@ -619,10 +619,11 @@
             display: grid;
             text-align: center;
             background-color: rgba(0, 0, 0, 0.555);
-            border-left:2px solid black ;
-            border-right:2px solid black ;
-            padding: 15px;
-            padding-top: 30px;
+            border-left:2px solid black;
+            border-right:2px solid black;
+            border-bottom: 2px solid black;
+            border-radius:0 0 15px 15px;
+            padding: 30px 15px 30px 15px;
             box-shadow: 0 10px 15px black ;
             max-width: 100%;
             min-height:30vh;
