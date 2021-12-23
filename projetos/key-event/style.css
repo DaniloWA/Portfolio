@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: grey;
+}
+
+
+
+/* HEADER --------Inicio */
+
+.titulo{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+.itemH1{
+    justify-self:center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    font-size: 3em;
+}
+
+/* HEADER --------FIM */
+
+
+/* Main block -------Inicio */
+
+.container{
+    box-sizing: border-box;
+    padding: 2vh 4vh 1vh 4vh;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr 1fr 1fr 5fr 0.5fr ;
+    margin: 0 auto;
+    margin-top: 15vh;
+    background: rgba(214, 214, 214, 0.678);
+    width: 70%;
+    height: 60vh;
+    border: 5px solid black;
+    box-shadow: 8px 8px 10px black;
+    row-gap: 1vh;
+    grid-template-areas: 
+    "txtEntrada txtEntrada txtEntrada txtEntrada . . . ."
+    "areaPressiona areaPressiona areaPressiona areaPressiona areaPressiona areaPressiona areaPressiona areaPressiona"
+    "txtHistorico txtHistorico . . . txtQuantidade txtQuantidade areaVezes"
+    "areaHistorico areaHistorico areaHistorico areaHistorico areaHistorico areaHistorico areaHistorico areaHistorico"
+    "btnRepor . . . . . . ."
+    ;
+
+}
+
+textarea{
+    box-sizing: border-box;
+    border: 2px solid black;
+    outline: none; 
+    resize: none;  
+    overflow: hidden; 
+    padding: 1vh;
+    font-size: 1.8em;
+    background-color: white;
+    color: black;
+    max-height: 284px;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+.btnRepor {
+    border: 2px solid black;
+}
+
+.btnRepor:hover{
+    background-color: white;
+    color: rgb(66, 66, 235);
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.txtEntrada{grid-area: txtEntrada;}
+.txtHistorico{grid-area: txtHistorico;}
+.txtQuantidade{
+    justify-self: end;
+    grid-area: txtQuantidade;
+}
+
+.areaPressiona{grid-area: areaPressiona;}
+.areaVezes{
+    text-align: center;
+    justify-self: end;
+    grid-area: areaVezes;
+    width: 15vh;
+    height: 6vh;
+    border-radius: 15px;
+    
+}
+.areaHistorico{grid-area: areaHistorico;}
+
+.btnRepor{grid-area: btnRepor;}
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin-top: 4vh;
+}
