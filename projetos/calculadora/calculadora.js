@@ -100,7 +100,7 @@ window.addEventListener("click", function(atual){
                     }
                     conta = []
                     break;
-
+                    
                     case "-": 
                     tela.innerHTML = "- "
                     operador = "-" 

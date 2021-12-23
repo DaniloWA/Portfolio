@@ -1,0 +1,81 @@
+body {
+ background-color: rgb(64, 19, 134);
+ font-size:  20px;
+ font-family: consolas;
+}
+#tituloIN{
+   text-align: center; 
+   color: rgb(14, 124, 14); 
+   margin: 0px;
+}
+#section1 {
+    color: rgb(9, 141, 9);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.801);
+    border-radius: 10px;
+    padding: 15px;
+    
+    width: 800px;
+    min-height: 735px;
+    margin: auto;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.322);
+}
+
+#section2 {
+    color: rgb(9, 141, 9);
+    text-align: center;
+    background:rgba(41, 41, 41, 0.795);
+    border-radius: 10px;
+    padding: 15px;
+    width: 760px;
+    min-height: 665px;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+footer {
+    padding-top: 25px;
+    text-align: center;
+    font-size:  30px;
+    color: white;
+}
+
+#operadorTxt {
+    text-align: center;
+    width: 60px;
+}
+
+p{
+    margin-top: -7px;
+    margin-left: -3px;
+    text-align: left;
+    font-size: 17px;
+ }
+
+#dadosEntrada {
+    color: rgb(150, 150, 150);
+    width:790px;
+    background-color: rgba(41, 41, 41, 0.795);
+    border: 0px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 45px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-style: solid;
+
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -5%);
+}
+
+#submit{
+    display: none;
+}
