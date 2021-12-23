@@ -1,0 +1,98 @@
+.n1{grid-area: n1;}
+.n2{grid-area: n2;}
+.n3{grid-area: n3;}
+.n4{grid-area: n4;}
+.n5{grid-area: n5;}
+.n6{grid-area: n6;}
+.n7{grid-area: n7;}
+.n8{grid-area: n8;}
+.n9{grid-area: n9;}
+.n0{grid-area: n0;}
+
+.limpar{grid-area: limpar;}
+.mais{grid-area: mais;}
+.menos{grid-area: menos;}
+.igual{grid-area: igual;}
+.barra{grid-area: barra;}
+.vezes{grid-area: vezes;}
+
+
+input[type="button"]{
+    background: linear-gradient(rgba(128, 128, 128, 0.281), white);
+    border:rgba(114, 114, 114, 0.5) solid 1px;
+    font-size: 1.6em;
+    border-radius: 15px;
+    
+}
+
+input:hover[type="button"]{
+     font-weight: bold;
+     background: linear-gradient( white, rgba(128, 128, 128, 0.281));
+     transition:  0.3s;
+     font-size: 1.8em;
+}
+
+input:focus[type="button"]{
+    font-weight: bold;
+    color: rgb(146, 145, 145);
+    font-size: 1.8em;
+}
+
+
+body{
+    background-color: grey;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    padding: 1vh;
+    display: grid;
+    margin: 0 auto;
+    margin-top: 2vh;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr repeat(4,3fr);
+    column-gap: 1vh;
+    row-gap: 1vh;
+    grid-template-areas: 
+        "tela tela tela tela"
+        "n1 n2 n3 limpar"
+        "n4 n5 n6 mais"
+        "n7 n8 n9 menos"
+        "n0 barra vezes igual"
+    ;
+}
+h1{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3vh;
+    font-size: 2.8em;
+    color: rgb(0, 0, 0);
+}
+
+.tela{
+    grid-area: tela;
+    align-self: center;
+    border:solid 1px rgba(128, 128, 128, 0.411);
+    background-color: rgb(173, 173, 173);
+    border-radius: 15px;
+    border: 3px black solid;
+    box-shadow: 0 0 5px rgb(14, 0, 0);
+    min-height: 5vh;
+    max-height: 5vh;
+}
+
+.tela p{
+    margin: 0;
+    padding: 1vh;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: consola;
+}
+
+ 
+
