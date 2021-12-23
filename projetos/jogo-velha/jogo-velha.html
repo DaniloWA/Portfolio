@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projetos/jogo-velha/css/main.min.css">
+    <title>Jogo da velha</title>
+</head>
+<body>
+    <div class="pegarDados">
+        <label id="label1" for="jogador1">Nome Player X</label>
+        <input id="jogador1" type="text" autocomplete="off" maxlength="8"><br>
+        <label id="label2" for="jogador2">Nome Player O</label>
+        <input id="jogador2" type="text" autocomplete="off" maxlength="8">
+        <input type="button" id="btnStart" value="START" onclick="getDados()">
+    </div>
+    <div class="container">
+        <div class="mostrador">
+            <h1>Vez do Jogador <span id="nomeAtual">Name</span> :</h1>
+            <img id="imgDaVez" src="/projetos/jogo-velha/img/x.png" alt="X">
+        </div>
+        <div class="tabuleiro">
+            <div id="a1" class="espaco" jogada="f">
+               
+            </div>
+            <div id="a2" class="espaco" jogada="f">
+               
+            </div>
+            <div id="a3" class="espaco" jogada="f">
+               
+            </div>
+
+            <div id="b1" class="espaco" jogada="f">
+               
+            </div>
+            <div id="b2" class="espaco" jogada="f">
+               
+            </div>
+            <div id="b3" class="espaco" jogada="f">
+               
+            </div>
+
+            <div id="c1" class="espaco" jogada="f">
+               
+            </div>
+            <div id="c2" class="espaco" jogada="f">
+               
+            </div>
+            <div id="c3" class="espaco" jogada="f">
+               
+            </div>
+        </div>
+        <div class="placar">
+            <h1 id="nick1">Name 1</h1>
+            <h1 id="nick2">Name 2</h1>
+            <hr>
+            <div class="player1">
+                <div class="pontos1">
+                    
+                </div>
+                <div class="pontos1">
+                    
+                </div>
+                <div class="pontos1">
+                    
+                </div>
+                <div class="pontos1">
+                    
+                </div>
+                <div class="pontos1">
+                    
+                </div>
+            </div>
+            <div class="player2">
+                <div class="pontos2">
+                    
+                </div>
+                <div class="pontos2">
+                    
+                </div>
+                <div class="pontos2">
+                    
+                </div>
+                <div class="pontos2">
+                    
+                </div>
+                <div class="pontos2">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/projetos/jogo-velha/js/game.js"></script>
+</body>
+</html>
