@@ -1,0 +1,13 @@
+@use "partials/biblioteca" as bc;
+
+ // light -- dark
+
+html[tema="light"]{   
+    @include bc.templete("light");
+}   
+
+html[tema="dark"]{
+    @include bc.templete("dark");
+}
+
+

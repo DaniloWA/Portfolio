@@ -1,0 +1,293 @@
+@use "sass:math";
+@use "sass:string";
+@use "sass:color";
+@use "partials/variaveis" as var;
+
+
+
+@mixin templete($templete) { // light -- dark
+    @include header($templete);
+    @include main($templete); 
+    @include aside($templete); 
+}
+
+
+// Header   Header   Header   Header 
+
+@mixin header($templete){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        height: 1000px;
+        background-color: var.$lightBgcolor;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 0.1fr repeat(3,1fr) 0.1fr;
+        width: 100%;
+        height: 4em;
+        background-color:  var.$lightHeaderFundoColor;
+        color: var.$lightColorTxt;
+        grid-template-areas: 
+        "imgBlocoNotas txtBlocosNotas . txtDark imgSOL"
+        ;
+        box-shadow: 0 1px 15px var.$lightHeaderShadowColor;
+        label{
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .imgBlocoNotas{
+            width: 3vw;
+            height: 6vh;
+            grid-area: imgBlocoNotas;
+            align-self: center;
+        }
+        .txtBlocosNotas{
+            grid-area: txtBlocosNotas;
+            align-self: center;
+        }
+        .txtDark{
+            grid-area: txtDark;
+            justify-self: end;
+            align-self: center;
+            margin-right: 1vh;
+        }
+        .imgSOL{
+            grid-area: imgSOL;
+            justify-self: end;
+            align-self: center;
+            img{
+                margin: 1vh 1vh 1vh 1vh;
+                width: 4vh;
+                height: 4vh;
+                &:hover{
+                    border-radius: 50%;
+                    background-color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+
+    @if $templete == "light" {
+        header{
+            background-color:  var.$lightHeaderFundoColor;
+            color: var.$lightColorTxt;
+            box-shadow: 0 1px 15px var.$lightHeaderShadowColor;
+        }
+        body{
+            background-color: var.$lightBgcolor;
+        }
+    }
+
+    @if $templete == "dark" {
+        header{
+            background-color:  var.$darkHeaderFundoColor;
+            color: var.$darkColorTxt;
+            box-shadow: 0 1px 15px var.$darkHeaderShadowColor;
+        }
+        body{
+            background-color: var.$darkBgcolor;
+        }
+    }
+}   
+
+
+// Main   Main   Main   Main 
+
+
+@mixin main($templete){
+    .bloco{
+        box-sizing: border-box;
+        padding: 15px;
+        display: grid;
+        margin: 0 auto;
+        margin-top: 6vh;
+        width: 500px;
+        height: 500px;
+        border-radius: 8px;
+        border: 5px solid var.$lightMainBorderColor;
+        background-color: var.$lightMainFundoColor;
+        grid-template-columns: 0.3fr 1fr 0.2fr 0.2fr;
+        grid-template-rows:1fr 0.1fr 10fr;
+        grid-template-areas: 
+             'data titulo imgBlocoLapis imgBlocoLixo'
+             'hrBloco hrBloco hrBloco hrBloco'
+             'textAreaBloco textAreaBloco textAreaBloco textAreaBloco'
+        ;
+        img{
+            width: 1.4vw;
+        }
+        textarea{
+            margin-top: 15px;
+            border: 4px solid var.$lightMainAreaBorder;
+            background-color: var.$lightAreaBackgroundColor ;
+            color: var.$lightAreaTxtColor;
+            border-radius: 15px;
+            padding: 15px;
+            font-size: 2em;
+            resize: none;
+        }
+        .data{
+            grid-area:data;
+            align-self: center;
+            font-weight: bold;
+        }
+        .titulo{
+            justify-self: center;
+            align-self: center;
+            grid-area:titulo;
+            font-weight: bold;
+            font-size: 2em;
+            border: none;
+            background-color:transparent ;
+            width: 250px;
+            text-align: center;
+            background-color: var.$lightMainTituloFundoColor;
+            border-radius: 15px;
+            &:hover, &:focus{
+                color: var.$lightMainHoverFocusTitulo;
+            }
+        }
+        .hrBloco{
+            grid-area:hrBloco;
+            height: 4px;
+            background-color: var.$lightMainHrColor;
+            border:none;
+        }
+        .imgBlocoLapis{
+            justify-self: center;
+            align-self: center;
+            grid-area:imgBlocoLapis;
+        }
+        .imgBlocoLixo{
+            justify-self: center;
+            align-self: center;
+            grid-area:imgBlocoLixo;
+        }
+        .textAreaBloco{
+            grid-area:textAreaBloco;
+        }
+    }
+
+    @if $templete == "light" {
+        .bloco{
+            border: 5px solid var.$lightMainBorderColor;
+            background-color: var.$lightMainFundoColor;
+            textarea{
+                background-color: var.$lightAreaBackgroundColor ;
+                color: var.$lightAreaTxtColor;
+                border: 4px solid var.$lightMainAreaBorder;
+            }
+            .titulo{
+                background-color: var.$lightMainTituloFundoColor;
+                &:hover, &:focus{
+                    color: var.$lightMainHoverFocusTitulo;
+                }
+            }
+            .hrBloco{
+                background-color: var.$lightMainHrColor;
+            }
+        }
+    }
+
+    @if $templete == "dark" {
+        .bloco{
+            border: 5px solid var.$darkMainBorderColor;
+            background-color: var.$darkMainFundoColor;
+            textarea{
+                background-color: var.$darkAreaBackgroundColor ;
+                color: var.$darkAreaTxtColor;
+                border: 4px solid var.$darkMainAreaBorder;
+            }
+            .titulo{
+                background-color: var.$darkMainTituloFundoColor;
+                &:hover, &:focus{
+                    color: var.$darkMainHoverFocusTitulo;
+                }
+            }
+            .hrBloco{
+                background-color: var.$darkMainHrColor;
+            }
+        }
+    }
+}
+
+// Aside        Aside        Aside        Aside      
+
+
+@mixin aside($templete){
+    aside{
+        top: 70px;
+        left: 96.4vw;
+        display: grid;
+        position: fixed;
+        width: 3em;
+        height: 9em;
+        border-radius: 15px;
+        border: 2px solid var.$lightAsideBorderColor;
+        grid-template-rows: 1fr 0.1fr 1fr 0.1fr 1fr;
+        grid-template-areas: 
+            "imgAsideMais"
+            "hr1"
+            "asideNumero"
+            "hr2"
+            "imgAsideCeta"
+        ;
+    
+        .imgAsideMais{
+            grid-area: imgAsideMais;
+            justify-self: center;
+            align-self: center;
+            height: 50%;
+        }
+        .imgAsideCeta{
+            grid-area: imgAsideCeta;
+            justify-self: center;
+            align-self: center;
+            height: 50%;
+        }
+        .asideNumero{
+            grid-area: asideNumero;
+            justify-self: center;
+            align-self: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            font-family: consolas;
+            color: var.$lightAsideColor;
+        }
+        
+        hr{
+            background-color: var.$lightAsideHrColor;
+            border: none;
+            height: 2px;
+        }
+        .hr1{grid-area: hr1;}
+        .hr2{grid-area: hr2;}
+    }
+
+    @if $templete == "light" {
+        aside{
+            border: 2px solid var.$lightAsideBorderColor;
+            hr{
+                background-color: var.$lightAsideHrColor;
+            }
+            .asideNumero{
+                color: var.$lightAsideColor;
+            }
+        }    
+    }
+
+    @if $templete == "dark" {
+        aside{
+            border: 2px solid var.$darkAsideBorderColor;
+            hr{
+                background-color: var.$darkAsideHrColor;
+            }
+            .asideNumero{
+                color: var.$darkAsideColor;
+            }
+        }
+    }
+}

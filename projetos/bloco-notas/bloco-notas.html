@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" tema="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de notas - Danilo Oliveira</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="shortcut icon" href="img/bloco-de-anotacoes-fav.png" type="image/x-icon">
+    
+</head>
+<body>
+
+    <header>
+        <a href="#"><img class="imgBlocoNotas" src="img/bloco-de-anotacoes.png" alt="bloco de Notas"></a>
+        <h1 class="txtBlocosNotas">Bloco de Notas</h1>
+        <label class="txtDark" for="temas" id="temaTxt">Light</label>
+        <a href="#" class="imgSOL" id="temas" onclick="temas()"><img src="img/brightness-high-fill.svg" alt="Sol Claro"></a>
+
+    </header>
+
+    <div class="container">
+        <main id="pai">
+        </main>
+    </div>
+    <aside>
+        <a href="#" class="imgAsideMais" onclick="adcElemento()"> <img  src="img/plus-square-fill.svg" alt="Mais"></a>
+        <hr class="hr1">
+        <p id="ContadorHTML" class="asideNumero">0</p>
+        <hr class="hr2">
+        <a href="#" class="imgAsideCeta"><img  src="img/arrow-up-circle-fill.svg" alt="Ceta pra cima"></a>
+    </aside>
+    <script src="js/main.js"></script>
+</body>
+</html>
